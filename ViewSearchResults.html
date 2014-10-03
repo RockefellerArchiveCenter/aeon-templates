@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Aeon - Search Results</title>
+<#INCLUDE filename="include_head.html">
+<#INCLUDE filename="include_header.html">
+<#INCLUDE filename="include_sortableTables.html">
+
+</head>
+<body id="type-b">
+	<div id="wrap">
+		<div id="content-wrap">
+			<#INCLUDE filename="include_menu.html">
+			<div id="content">
+			<div id="status"><#STATUS></div>
+				<div class="default-table">			
+					<#TABLE name="ViewSearchResults" headerText="Search Results" noDataAction="ShowMessageRow" noDataMessage="No Results" sortable="true" 
+					 column="TransactionNumber:TN" column="Title" column="ItemAuthor:Author/Creator" column="CallNumber:Call&nbsp;Number" column="ItemVolume:Volume/Box" column="TransactionStatus:Status">
+				</div>
+				<#INCLUDE filename="include_footer.html">
+			</div>    
+		</div>
+	</div>
+</body>
+</html>

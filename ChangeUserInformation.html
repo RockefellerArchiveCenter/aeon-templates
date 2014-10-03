@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Aeon - Change User Information</title>
+<#INCLUDE filename="include_head.html">
+<script type="text/javascript" src="js/CheckboxHandler.js"></script>
+</head>
+<#INCLUDE filename="include_header.html">
+<body id="type-b"  onLoad="SeparateHiddenToCheckboxes('ChangeUserInformation', 'ResearchPurposeCheckBox', 'UserInfo1')">
+	<div id="wrap">
+  		<div id="content-wrap">
+  			<#INCLUDE filename="include_menu.html">
+    		<div id="content">
+				<form action="aeon.dll" method="post" name="ChangeUserInformation" class="f-wrap-request">
+					<input type="hidden" name="AeonForm" value="ChangeUserInformation">
+					<input type="hidden" name="NotificationMethod" value="E-mail">
+
+					<div class="req"><b>*</b> Indicates required field</div>
+					<fieldset>	
+						<p><div id="status"><#STATUS></div></p>
+		
+						<h3>Update Personal Information</h3>	
+					
+						<label for="FirstName">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORFirstName">"><b>First Name</b></span>
+							</span>
+							<input id="FirstName" name="FirstName" type="text" size="40" class="f-name" tabindex="5" value="<#PARAM name="FirstName">"><br />	
+						</label>		
+							
+						<label for="LastName">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORLastName">"><b>Family Name</b></span>
+							</span>
+							<input id="LastName" name="LastName" type="text" size="40" class="f-name" tabindex="10" value="<#PARAM name="LastName">"><br />						
+						</label>
+						
+						<label for="EMailAddress">
+							<span class="field">
+								<span class="req">*</span>						
+								<span class="<#ERROR name="ERROREMailAddress">"><b>E-mail Address</b></span></br>
+								<span class="note">If you do not have an e-mail address, enter &#34;None&#34;.</span>
+							</span>
+							<input id="EMailAddress" name="EMailAddress" type="text" size="40" class="f-name" tabindex="15" value="<#PARAM name="EMailAddress">"><br />						
+						</label>
+						
+						<label for="Phone">
+							<span class="field">
+								<span class="<#ERROR name="ERRORPhone">"><b>Contact Phone Number</b></span>
+							</span>
+							<input id="Phone" name="Phone" type="text" size="40" class="f-name" tabindex="20" value="<#PARAM name="Phone">"><br />						
+						</label>
+						
+						<label for="Address">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORAddress">"><b>Address Line 1</b></span>
+							</span>
+							<input id="Address" name="Address" type="text" size="40" class="f-name" tabindex="25" value="<#PARAM name="Address">"><br />						
+						</label>
+						
+						<label for="Address2">
+							<span class="field">
+								<span class="<#ERROR name="ERRORAddress2">"><b>Address Line 2</b></span>
+							</span>
+							<input id="Address2" name="Address2" type="text" size="40" class="f-name" tabindex="30" value="<#PARAM name="Address2">"><br />
+						</label>
+					
+						<label for="City">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORCity">"><b>City</b></span>
+							</span>
+							<input id="City" name="City" type="text" size="40" class="f-name" tabindex="35" value="<#PARAM name="City">"><br />
+						</label>
+						
+						<label for="State">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORState">"><b>State</b></span>
+							</span>
+							<select id="State" name="State" size="1" class="f-name" tabindex="40">
+								<option>Choose a State</option>
+								<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
+							</select>
+							<br />
+						</label>
+						
+						<label for="Zip">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORZip">"><b>Postal Code</b></span>
+							</span>
+							<input id="Zip" name="Zip" type="text" size="40" class="f-name" tabindex="45" value="<#PARAM name="Zip">"><br />
+						</label>
+
+                        			<label for="Country">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORCountry">"><b>Country</b></span>
+							</span>							
+                           			 	<select id="Country" name="Country" size="1" class="f-name" tabindex="50">
+							    <#OPTION name="Countries" selectedValue="<#PARAM name=Country>"  defaultValue="Choose a country"/>
+						    </select><br />
+						</label>
+						
+						<label for="Status">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORStatus">"><b>Status</b></span>
+							</span>
+							<select id="StatusOption" name="Status" size="1" class="f-name" tabindex="60">
+								<option>Choose a Status</option>
+								<#OPTION name="Statuses">
+							</select><br />
+						</label>
+						
+						<label for="Organization">
+							<span class="field">
+								<span class="<#ERROR name="ERROROrganization">"><b>Institutional Affiliation</b></span>
+							</span>
+							<input id="Organization" name="Organization" type="text" size="40" class="f-name" tabindex="65" value="<#PARAM name="Organization">"><br />						
+						</label>
+					
+						<label for="Department">
+							<span class="field">
+								<span class="<#ERROR name="ERRORDepartment">"><b>Department</b></span>
+							</span>
+							<input id="Department" name="Department" type="text" size="40" class="f-name" tabindex="70" value="<#PARAM name="Department">"><br />						
+						</label>
+						
+						<label for="ResearchTopics">
+							<span class="field">
+								<span class="req">*</span>
+								<span class="<#ERROR name="ERRORResearchTopics">"><b>Research Topic</b></span>
+							</span>
+							<textarea id="ResearchTopics" name="ResearchTopics" rows="2" cols="40" class="f-name" tabindex="75"><#PARAM name="ResearchTopics"></textarea><br />
+						</label>
+						
+					<label for="UserInfo1">
+							<span class="field">
+								<span class="<#ERROR name="ERRORRUserInfo1">"><b>Research Purpose</b></span>				
+							</span>
+							<input type="hidden" id="UserInfo1" name="UserInfo1" value="<#PARAM name="UserInfo1">" />
+							<fieldset>
+							<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic1">&nbsp;<span class="bold">Book</span><br />
+							<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Dissertation" type="checkbox" id="rbTopic2">&nbsp;<span class="bold">Dissertation</span><br />
+							</fieldset>
+					</label><br />	
+																   
+						<div class="f-submit-wrap" align="right">
+							<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="200" onClick="CombineCheckboxesToHidden('ChangeUserInformation', 'ResearchPurposeCheckBox', 'UserInfo1')"/>
+							<input type="submit" name="SubmitButton" value="Cancel - Exit to Main Menu" class="f-submit" tabindex="201" />
+						</div>
+					</fieldset>
+				</form>		
+      			<#INCLUDE filename="include_footer.html">
+    		</div>    
+  		</div>
+	</div>
+</body>
+</html>

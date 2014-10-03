@@ -1,0 +1,47 @@
+<label for="ItemPages">
+	<span class="field">
+		<span class="<#ERROR name="ERRORItemPages">"><b>Inclusive Pages</b></span>
+	</span>
+	<input id="ItemPages" name="ItemPages" type="text" size="90" class="f-name" tabindex="90" value="<#PARAM name="ItemPages">"><br />
+</label>
+
+<label for="PageCount">
+	<span class="field">
+		<span class="<#ERROR name="ERRORPageCount">"><b>Page Count</b></span>
+	</span>
+	<input id="PageCount" name="PageCount" type="text" size="95" class="f-name" tabindex="95" value="<#PARAM name="PageCount">"><br />
+</label>
+
+<label for="Format">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORFormat">"><b>Format</b></span>
+	</span>
+	<select id="Format" name="Format" size="1" class="f-name" tabindex="100">
+		<#OPTION name="Formats">
+	</select><br />
+</label>
+
+<label for="ShippingOption">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORShippingOption">"><b>Shipping</b></span>
+	</span>
+	<select id="ShippingOption" name="ShippingOption" size="1" class="f-name" tabindex="105">
+		<#OPTION name="ShippingOptions">
+	</select><br />
+</label>
+						
+<label for="ServiceLevel">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORServiceLevel">"><b>Service Level</b></span>
+	</span>
+	<select id="ServiceLevel" name="ServiceLevel" size="1" class="f-name" tabindex="110">
+		<#OPTION name="ServiceLevels">
+	</select><br />
+</label>      
+
+<label for="ForPublication">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORForPublication">"><b>For Publication?</b></span>
+	</span>
+	<input id="ForPublication" name="ForPublication" type="checkbox" class="f-checkbox" tabindex="115" value="Yes" <#CHECKED name="ForPublication"> default="false" /><br />
+</label>      

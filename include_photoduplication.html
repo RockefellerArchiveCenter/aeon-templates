@@ -1,0 +1,40 @@
+<label for="ItemPages">
+	<span class="field">
+        <span class="req">*</span>
+		<span class="<#ERROR name="ERRORItemPages">"><b>Description of Materials</b></span>
+	</span>
+	<input id="ItemPages" name="ItemPages" type="text" size="90" class="f-name" tabindex="100" value="<#PARAM name="ItemPages">"><br />
+</label>
+
+<label for="PageCount">
+	<span class="field">
+		<span class="<#ERROR name="ERRORPageCount">"><b>Image or Page Count</b></span>
+	</span>
+	<input id="PageCount" name="PageCount" type="text" size="95" class="f-name" tabindex="105" value="<#PARAM name="PageCount">"><br />
+</label>
+
+<label for="Format">
+	<span class="field"> 
+        <span class="req">*</span>       
+		<span class="<#ERROR name="ERRORFormat">"><b>Format</b></span>
+	</span>
+	<select id="Format" name="Format" size="1" class="f-name" tabindex="110">
+		<#OPTION name="Formats">
+	</select><br />
+</label>
+
+<label for="ShippingOption">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORShippingOption">"><b>Shipping Option</b></span>
+	</span>
+	<select id="ShippingOption" name="ShippingOption" size="1" class="f-name" tabindex="115">
+		<#OPTION name="ShippingOptions">
+	</select><br />
+</label>     
+
+<label for="ForPublication">
+	<span class="field">        
+		<span class="<#ERROR name="ERRORForPublication">"><b>For Publication?</b></span>
+	</span>
+	<input id="ForPublication" name="ForPublication" type="checkbox" class="f-checkbox" tabindex="120" value="Yes" <#CHECKED name="ForPublication"> default="false" /><br />
+</label>      

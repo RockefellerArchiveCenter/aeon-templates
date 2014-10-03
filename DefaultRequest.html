@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Aeon - New Request</title>
+<#INCLUDE filename="include_head.html">
+<#INCLUDE filename="include_head_request.html">
+<#INCLUDE filename="include_header_request.html">
+</head>
+<body id="type-b">
+    <div id="wrap">
+        
+        <div id="content-wrap">
+            <#INCLUDE filename="include_menu.html">
+            <div id="content">	
+                <form action="aeon.dll" method="post" name="DefaultRequest" id="RequestForm" class="f-wrap-request">
+                    <input type="hidden" name="AeonForm" value="DefaultRequest">
+                    <input type="hidden" name="Username" value="<#PARAM name="Username">">
+                    <input type="hidden" name="SessionID" value="<#PARAM name="SessionID">">
+                    <input type="hidden" name="TransactionLink" value="<#PARAM name="TransactionLink">">
+                    <input type="hidden" name="Location" value="<#PARAM name="Location">">
+                    <input type="hidden" name="ItemNumber" value="<#PARAM name="ItemNumber">">
+                    <input type="hidden" name="ItemInfo4" value="<#PARAM name="ItemInfo4">">
+                    <input type="hidden" name="RequestType" value="Loan">
+                    
+                    <div class="req"><b>*</b> Indicates required field</div>
+                    <fieldset>			
+                        <h3>New Material Request</h3>
+                        <#STATUS>
+                        <h2>Describe the item you want</h2>
+                                        
+                        <label for="ItemTitle">
+                            <span class="field">
+                                <span class="req">*</span>
+                                <span class="<#ERROR name="ERRORItemTitle">"><b>Collection Name/Book Title</b></span><br />
+                            </span>
+                            <textarea id="ItemTitle" name="ItemTitle" rows="2" cols="40" class="f-name" tabindex="5"><#PARAM name="ItemTitle"></textarea><br />
+                        </label>		
+
+                        <label for="ItemInfo1">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemInfo1">"><b>Record Group/Subgroup</b></span><br />
+                            </span>
+                            <textarea id="ItemInfo1" name="ItemInfo1" rows="2" cols="40" class="f-name" tabindex="10"><#PARAM name="ItemInfo1"></textarea><br />
+                        </label>
+                        
+                        <label for="ItemSubTitle">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemSubTitle">"><b>Series/Subseries</b></span>
+                            </span>
+                            <textarea id="ItemSubTitle" name="ItemSubTitle" rows="2" cols="40" class="f-name" tabindex="15"><#PARAM name="ItemSubTitle"></textarea><br />
+                        </label>  
+
+                        <label for="ItemInfo2">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemInfo2">"><b>Other Level</b></span><br />
+                            </span>
+                            <textarea id="ItemInfo2" name="ItemInfo2" rows="2" cols="40" class="f-name" tabindex="20"><#PARAM name="ItemInfo2"></textarea><br />
+                        </label>
+                            
+                        <label for="ItemAuthor">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemAuthor">"><b>Author/Creator</b></span>
+                            </span>
+                            <input id="ItemAuthor" name="ItemAuthor" type="text" size="40" class="f-name" tabindex="25" value="<#PARAM name="ItemAuthor">"><br />						
+                        </label>
+
+                        <label for="ItemDate">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemDate">"><b>Date(s)</b></span>
+                            </span>
+                            <input id="ItemDate" name="ItemDate" type="text" size="40" class="f-name" tabindex="30" value="<#PARAM name="ItemDate">"><br />						
+                        </label>
+
+                        <label for="CallNumber">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORCallNumber">"><b>Finding Aid Number/Call Number</b></span>
+                            </span>
+                            <input id="CallNumber" name="CallNumber" type="text" size="20" class="f-name" tabindex="35" value="<#PARAM name="CallNumber">"><br />						
+                        </label>
+
+                        <label for="ItemVolume">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemVolume">"><b>Box Number/Container</b></span></br>
+                                <span class="note">Include separation number if applicable.</span>
+                            </span>
+                            <input id="ItemVolume" name="ItemVolume" type="text" size="40" class="f-name" tabindex="40" value="<#PARAM name="ItemVolume">"><br />						
+                        </label>
+
+                        <label for="ItemIssue">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemIssue">"><b>Folder Number</b></span>
+                            </span>
+                            <input id="ItemIssue" name="ItemIssue" type="text" size="40" class="f-name" tabindex="45" value="<#PARAM name="ItemIssue">"><br />						
+                        </label>
+                    
+                        <label for="ItemInfo3">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORItemInfo3">"><b>Folder Title</b></span>
+                            </span>
+                            <input id="ItemInfo3" name="ItemInfo3" type="text" size="20" class="f-name" tabindex="50" value="<#PARAM name="ItemInfo3">"><br />						
+                        </label>
+                        
+                        <span class="<#PARAM name="RequestLinksVisible" enabled="RequestForEnabled" disabled="RequestForDisabled">">
+                             <label for="RequestLink">
+                                <span class="field">
+                                    <span class="<#ERROR name="ERRORRequestLink">"><b>Request for</b></span>
+                                </span>
+                                <select id="RequestLink" name="RequestLink" size="1" class="f-name" tabindex="90">
+                                    <#OPTION name="RequestLinks" hideUsernames="true">
+                                </select><br />
+                            </label>
+                        </span>
+
+                        <label for="SpecialRequest">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORSpecialRequest">"><b>Special Requests/Questions?</b></span><br />
+                                <span class="note">Please enter any special requests or questions for RAC staff.</span>
+                            </span>
+                            <textarea id="SpecialRequest" name="SpecialRequest" rows="2" cols="40" class="f-name" tabindex="200"><#PARAM name="SpecialRequest"></textarea><br />
+                        </label>
+                        
+                        <label for="Notes">
+                            <span class="field">
+                                <span class="<#ERROR name="ERRORNotes">"><b>My Notes</b></span><br />
+                                <span class="note">Enter any notes about this request for your personal reference.</span>
+                            </span>
+                            <textarea id="Notes" name="Notes" rows="2" cols="40" class="f-name" tabindex="205"><#PARAM name="Notes"></textarea><br />
+                        </label>
+
+                        <#INCLUDE filename="include_scheduleddate_review_toggle.html">
+                        
+                        <#INCLUDE filename="include_request_buttons.html">
+                    </fieldset>
+                </form>	
+                <#INCLUDE filename="include_footer.html">
+				<br /><br /><br /><br /><br />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

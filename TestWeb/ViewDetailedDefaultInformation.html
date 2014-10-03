@@ -1,0 +1,147 @@
+<div class="default-table simple-table">
+    <!-- <#TABLE name="DetailedInformation" headerText="Transaction Information" hideColumnHeaders="true"><br />					 -->
+    <table class="default-table">
+        <thead>
+            <tr class="row-header">
+                <th colspan="2">
+                    Transaction Information
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row-even">
+                <td>
+                    Title
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemTitle">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Author
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemAuthor">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>
+                    Place of Publication
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemPlace">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Publisher
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemPublisher">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>
+                    Date
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemDate">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Edition
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemEdition">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>
+                    Volume/Box
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemVolume">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Issue/Copy
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemIssue">
+                </td>
+            </tr>
+            <!--<tr class="row-even">
+                <td>
+                    Size/Physical Description
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemCitation">
+                </td>
+            </tr>-->
+            <!--<tr class="row-even">
+                <td>
+                    ISxN
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemISxN">
+                </td>
+            </tr>-->
+            <tr class="row-even">
+                <td>
+                    Call Number
+                </td>
+                <td>
+                    <#TRANSACTION field="CallNumber">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Location
+                </td>
+                <td>
+                    <#TRANSACTION field="Location">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>Requested For (if applicable)</td>
+                <td><#TRANSACTION field="ResearcherUsername"></td>
+            </tr>
+            <tr class="row-even">
+                <td>Activity Number (if applicable)</td>
+                <td><#TRANSACTION field="ActivityID"></td>
+            </tr>
+            <tr class="row-odd">
+                <td>Scheduled Date (if applicable)</td>
+                <td><#TRANSACTION field="ScheduledDate"></td>
+            </tr>
+            <tr class="row-even">
+                <td>Special Request (if applicable)</td>
+                <td><#TRANSACTION field="SpecialRequest"></td>
+            </tr>
+            <tr class="row-odd">
+                <td></td>
+                <td></td>
+            </tr>						
+            <tr class="row-even">
+                <td>FOR DUPLICATION ORDERS:</td>
+                <td></td>	
+            </tr>
+            <tr class="row-odd">
+                <td>Pages/Selections to be Reproduced</td>
+                <td><#TRANSACTION field="ItemPages"></td>
+            </tr>
+            <tr class="row-even">
+                <td>Estimated Number of Images</td>
+                <td><#TRANSACTION field="PageCount"></td>
+            </tr>				
+            <tr class="row-odd">
+                <td>For Publication?</td>
+                <td><#TRANSACTION field="ForPublication"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+</div>

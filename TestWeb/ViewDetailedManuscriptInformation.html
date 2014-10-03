@@ -1,0 +1,79 @@
+<div class="default-table simple-table">
+    <!--					<#TABLE name="DetailedInformation" headerText="Transaction Information" hideColumnHeaders="true"><br />					 -->
+    <table class="default-table">
+        <thead>
+            <tr class="row-header">
+                <th colspan="2">
+                    Manuscript Information
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row-even">
+                <td>
+                    Title
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemTitle">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Author/Creator
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemAuthor">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>
+                    Date(s)
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemDate">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Collection Name/Location
+                </td>
+                <td>
+                    <#TRANSACTION field="Location">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>
+                    Call Number
+                </td>
+                <td>
+                    <#TRANSACTION field="CallNumber">
+                </td>
+            </tr>
+            <tr class="row-odd">
+                <td>
+                    Box(es)/Folder(s)
+                </td>
+                <td>
+                    <#TRANSACTION field="ItemVolume">
+                </td>
+            </tr>
+            <tr class="row-even">
+                <td>Requested For (if applicable)</td>
+                <td><#TRANSACTION field="ResearcherUsername"></td>
+            </tr>
+            <tr class="row-odd">
+                <td>Activity Number (if applicable)</td>
+                <td><#TRANSACTION field="ActivityID"></td>
+            </tr>
+            <tr class="row-even">
+                <td>Scheduled Date (if applicable)</td>
+                <td><#TRANSACTION field="ScheduledDate"></td>
+            </tr>
+            <tr class="row-odd">
+                <td>Special Request (if applicable)</td>
+                <td><#TRANSACTION field="SpecialRequest"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+</div>

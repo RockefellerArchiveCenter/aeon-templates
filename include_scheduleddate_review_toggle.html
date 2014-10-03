@@ -1,0 +1,18 @@
+<input id="VisitScheduled" name="Visit" type="radio" tabindex="400" CHECKED="CHECKED"> Schedule Retrieval<br />
+<input id="VisitReview" name="Visit" type="radio" tabindex="501"> Keep for My Review<br />						
+
+<label for="ScheduledDate">
+	<input type="hidden" name="FormValidationOverride" value="ScheduledDate">
+	<span class="field">	
+               <span class="req">*</span>							
+		<span class="note <#ERROR name="ERRORScheduledDate">"><strong>Click in the field to the right to bring up a calendar</strong> and use it to indicate the date you plan to visit.</span>
+	</span>
+	<input id="ScheduledDate" name="ScheduledDate" class="f-name" tabindex="500" type="textbox" value="<#PARAM name="ScheduledDate">"><br />
+</label>						
+					
+<label for="UserReview">
+	<span class="field">								
+        <span class="note <#ERROR name="ERRORUserReview">"><strong>This request will not be processed</strong> until you select and submit it from the "Review Requests" listing under the "Requests" menu in the left-hand navigational bar.</span>
+	</span>
+	<input id="UserReview" name="UserReview" class="f-checkbox" tabindex="505" value="Yes" type="checkbox" <#CHECKED name="UserReview" default="false">><br />
+</label>
