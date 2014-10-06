@@ -5,192 +5,240 @@
 <script type="text/javascript" src="js/CheckboxHandler.js"></script>
 </head>
 
-<div id="navBar">
-</div>
-
-<div id="racBanner">
-	<div id="racLogo">
-		<a target="_blank" href="klematis_big.htm">
-		<img src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
-		</a>
-	</div>
-	<div id="racTitle">RACcess.rockarch.org</div>
-</div>
-<div class="clear2"></div>
+<#INCLUDE filename="include_header.html">
 
 <body id="type-a"  onLoad="SeparateHiddenToCheckboxes('Registration', 'ResearchPurposeCheckBox', 'UserInfo1')">
 	<div id="wrap">
   		<div id="content-wrap">
     		<div id="content">
-				<form action="aeon.dll" method="post" name="Registration" class="f-wrap-request">
+				<form action="aeon.dll" method="post" name="Registration" class="f-wrap-request form-horizontal" role="form">
 					<input type="hidden" name="AeonForm" value="Registration">
 					<input type="hidden" name="NotificationMethod" value="E-mail">
                     <#FORMSTATE>
 
-					<div class="req"><b>*</b> Indicates required field</div>
+					<!-- <div class="req"><b>*</b> Indicates required field</div> -->
 					
 					<p><div id="status"><#STATUS></div></p>
 		
-					<h3>New User Registration</h3>
-					<fieldset>			
-						<label for="FirstName">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORFirstName">"><b>First Name</b></span>
-							</span>
-							<input id="FirstName" name="FirstName" type="text" size="40" class="f-name" tabindex="5" value="<#PARAM name="FirstName">"><br />	
-						</label>		
+					<div class="col-sm-12 text-center">
+						<h2>New User Registration</h2>
+					</div>
+					<fieldset class="col-sm-12">
+						<div class="form-group required">			
+							<label for="FirstName" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORFirstName">">First Name</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="FirstName" name="FirstName" type="text" class="f-name form-control" tabindex="5" value="<#PARAM name="FirstName">">
+							</div>	
+						</div>		
 							
-						<label for="LastName">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORLastName">"><b>Family Name</b></span>
-							</span>
-							<input id="LastName" name="LastName" type="text" size="40" class="f-name" tabindex="10" value="<#PARAM name="LastName">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="LastName" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORLastName">">Family Name</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="LastName" name="LastName" type="text" class="f-name form-control" tabindex="10" value="<#PARAM name="LastName">">
+							</div>				
+						</div>
 						
-						<label for="EMailAddress">
-							<span class="field">
-								<span class="req">*</span>						
-								<span class="<#ERROR name="ERROREMailAddress">"><b>E-mail Address</b></span></br>
-								<span class="note">If you do not have an e-mail address, enter &#34;None&#34;.</span>
-							</span>
-							<input id="EMailAddress" name="EMailAddress" type="text" size="40" class="f-name" tabindex="15" value="<#PARAM name="EMailAddress">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="EMailAddress" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERROREMailAddress">">E-mail Address</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="EMailAddress" name="EMailAddress" type="text" class="f-name form-control" tabindex="15" value="<#PARAM name="EMailAddress">">
+								<span class="help-block">If you do not have an e-mail address, enter &#34;None&#34;.</span>
+							</div>
+								
+						</div>
 						
-						<label for="Phone">
-							<span class="field">
-								<span class="<#ERROR name="ERRORPhone">"><b>Contact Phone Number</b></span>
-							</span>
-							<input id="Phone" name="Phone" type="text" size="40" class="f-name" tabindex="20" value="<#PARAM name="Phone">"><br />						
-						</label>
+						<div class="form-group">
+							<label for="Phone" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORPhone">">Contact Phone Number</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Phone" name="Phone" type="text" class="f-name form-control" tabindex="20" value="<#PARAM name="Phone">">
+							</div>
+						</div>
 						
-						<label for="Address">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORAddress">"><b>Address Line 1</b></span>
-							</span>
-							<input id="Address" name="Address" type="text" size="40" class="f-name" tabindex="25" value="<#PARAM name="Address">"><br />						
-						</label>
-						
-						<label for="Address2">
-							<span class="field">
-								<span class="<#ERROR name="ERRORAddress2">"><b>Address Line 2</b></span>
-							</span>
-							<input id="Address2" name="Address2" type="text" size="40" class="f-name" tabindex="30" value="<#PARAM name="Address2">"><br />
-						</label>
-					
-						<label for="City">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORCity">"><b>City</b></span>
-							</span>
-							<input id="City" name="City" type="text" size="40" class="f-name" tabindex="35" value="<#PARAM name="City">"><br />
-						</label>
-						
-						<label for="State">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORState">"><b>State</b></span>
-							</span>
-							<select id="State" name="State" size="1" class="f-name" tabindex="40">
-								<option>Choose a State</option>
-								<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
-							</select>
-							<br />
-						</label>
-						
-						<label for="Zip">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORZip">"><b>Postal Code</b></span>
-							</span>
-							<input id="Zip" name="Zip" type="text" size="40" class="f-name" tabindex="45" value="<#PARAM name="Zip">"><br />
-						</label>
+						<div class="form-group required">
+							<label for="Address" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORAddress">">Address Line 1</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Address" name="Address" type="text" class="f-name form-control" tabindex="25" value="<#PARAM name="Address">">
+							</div>
+						</div>
 
-                        			<label for="Country">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORCountry">"><b>Country</b></span>
-							</span>							
-                           			 	<select id="Country" name="Country" size="1" class="f-name" tabindex="50">
-							    <#OPTION name="Countries" selectedValue="<#PARAM name=Country>"  defaultValue="Choose a country"/>
-						    </select><br />
-						</label>
-						
-						<label for="Status">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORStatus">"><b>Status</b></span>
-							</span>
-							<select id="StatusOption" name="Status" size="1" class="f-name" tabindex="60">
-								<#OPTION name="Statuses">
-							</select><br />
-						</label>
-						
-						<label for="Organization">
-							<span class="field">
-								<span class="<#ERROR name="ERROROrganization">"><b>Institutional Affiliation</b></span>
-							</span>
-							<input id="Organization" name="Organization" type="text" size="40" class="f-name" tabindex="65" value="<#PARAM name="Organization">"><br />						
-						</label>
+						<div class="form-group">
+							<label for="Address2" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORAddress2">">Address Line 2</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Address2" name="Address2" type="text" class="f-name form-control" tabindex="30" value="<#PARAM name="Address2">">
+							</div>
+						</div>
 					
-						<label for="Department">
-							<span class="field">
-								<span class="<#ERROR name="ERRORDepartment">"><b>Department</b></span>
-							</span>
-							<input id="Department" name="Department" type="text" size="40" class="f-name" tabindex="70" value="<#PARAM name="Department">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="City" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORCity">">City</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="City" name="City" type="text" class="f-name form-control" tabindex="35" value="<#PARAM name="City">">
+							</div>
+						</div>
 						
-						<label for="ResearchTopics">
-							<span class="field">
-							<span class="req">*</span>
-								<span class="<#ERROR name="ERRORResearchTopics">"><b>Research Topics</b></span>
-							</span>
-							<textarea id="ResearchTopics" name="ResearchTopics" rows="2" cols="40" class="f-name" tabindex="110"><#PARAM name="ResearchTopics"></textarea><br />
-						</label>
+						<div class="form-group required">
+							<label for="State" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
+							</label>
+							<div class="col-sm-5">
+								<select id="State" name="State" class="f-name form-control" tabindex="40">
+									<option>Choose a State</option>
+									<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
+								</select>
+							</div>
+						</div>
 						
-						<label for="UserInfo1">
-							<span class="field">
-								<span class="valid"><b>Research Purpose</b></span>				
-							</span>
+						<div class="form-group required">
+							<label for="Zip" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORZip">">ZIP/Postal Code</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Zip" name="Zip" type="text" class="f-name form-control" tabindex="45" value="<#PARAM name="Zip">">
+							</div>
+						</div>
+
+                        <div class="form-group required">
+                        	<label for="Country" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORCountry">">Country</span>
+							</label>
+							<div class="col-sm-5">
+								<select id="Country" name="Country" class="f-name form-control" tabindex="50">
+							    	<#OPTION name="Countries" selectedValue="<#PARAM name=Country>"  defaultValue="Choose a country"/>
+					    		</select>
+					    	</div>
+						</div>
+						
+						<div class="form-group required">
+							<label for="Status" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORStatus">">Researcher Type</span>
+							</label>
+							<div class="col-sm-5">
+								<select id="StatusOption" name="Status" class="f-name form-control" tabindex="60">
+									<#OPTION name="Statuses">
+								</select>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="Organization" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERROROrganization">">Institutional Affiliation</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Organization" name="Organization" type="text" class="f-name form-control" tabindex="65" value="<#PARAM name="Organization">">
+							</div>
+						</div>
+					
+						<div class="form-group">
+							<label for="Department" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORDepartment">">Department</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Department" name="Department" type="text" class="f-name form-control" tabindex="70" value="<#PARAM name="Department">">
+							</div>	
+						</div>
+						
+						<div class="form-group">
+							<label for="ResearchTopics" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORResearchTopics">">Research Topics</span>
+							</label>
+							<div class="col-sm-5">
+								<textarea id="ResearchTopics" name="ResearchTopics" rows="2" class="f-name form-control" tabindex="110"><#PARAM name="ResearchTopics">
+								</textarea>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="UserInfo1" class="col-sm-4 control-label">
+								<span class="valid">Research Purpose</span>	
+							</label>			
 							<input type="hidden" id="UserInfo1" name="UserInfo1" value="<#PARAM name="UserInfo1">" />
+							<div class="col-sm-5">
 							<fieldset>
-							<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic1">&nbsp;<span class="bold">Book</span><br />
-							<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Dissertation" type="checkbox" id="rbTopic2">&nbsp;<span class="bold">Dissertation</span><br />
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic1">
+									&nbsp;Article
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic2">
+									&nbsp;Audiovisual Production
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic3">										&nbsp;Book
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic4">
+									&nbsp;Dissertation
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic5">
+									&nbsp;Genealogy
+								</label>									<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic6">
+									&nbsp;Online Publication
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic7">
+									&nbsp;Personal Interest
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic8">
+									&nbsp;Presentation
+								</label>
 							</fieldset>
-						</label>	
+							</div>
+						</div>	
 					
-						<label for="Username">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORUsername">"><b>Choose a Username</b></span><br />
-							</span>
-							<input id="Username" name="Username" type="text" size="40" class="f-name" tabindex="200" value="<#PARAM name="NewUsername">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="Username" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORUsername">">Choose a Username</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Username" name="Username" type="text" class="f-name form-control" tabindex="200" value="<#PARAM name="NewUsername">">
+								<span class="help-block">Use something that is both unique and that you can easily remember, like your email address.</span>
+							</div>
+						</div>
 						
-						<label for="Password1">
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORPassword1">"><b>Choose a Password</b></span><br />
-								<span class="note">Case sensitive</span>
-							</span>
-							<input id="Password1" name="Password1" type="password" size="40" class="f-name" tabindex="205" value="<#PARAM name="Password1">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="Password1" class="col-sm-4 control-label">
+								<span class="<#ERROR name="ERRORPassword1">">Choose a Password</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Password1" name="Password1" type="password" class="f-name form-control" tabindex="205" value="<#PARAM name="Password1">">
+								<span class="help-block">Case sensitive</span>
+							</div>
+						</div>
 						
-						<label for="Password2">						
-							<span class="field">
-								<span class="req">*</span>
-								<span class="<#ERROR name="ERRORPassword2">"><b>Re-enter Password</b></span><br />
-								<span class="note">Case sensitive</span>
-							</span>
-							<input id="Password2" name="Password2" type="password" size="40" class="f-name" tabindex="206" value="<#PARAM name="Password2">"><br />						
-						</label>
+						<div class="form-group required">
+							<label for="Password2" class="col-sm-4 control-label">						
+								<span class="<#ERROR name="ERRORPassword2">">Re-enter Password</span>
+							</label>
+							<div class="col-sm-5">
+								<input id="Password2" name="Password2" type="password" class="f-name form-control" tabindex="206" value="<#PARAM name="Password2">">
+								<span class="help-block">Case sensitive</span>
+							</div>
+						</div>
+
+						<div>
+							<p>After submitting this form, you should receive a confirmation email from RACcess with your account information. If you don't hear from us within a few hours, please send an email to <a href="mailto:archive@rockarch.org">archive@rockarch.org</a> and let us know.
+						</div>
 					               
-						<div class="f-submit-wrap" align="right">
-							<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="300" onClick="CombineCheckboxesToHidden('Registration', 'ResearchPurposeCheckBox', 'UserInfo1')"/>
-							<input type="reset" name="ResetButton" value="Clear Form" class="f-submit" tabindex="301" />
-							<input type="submit" name="SubmitButton" value="Cancel - Exit Aeon System" class="f-submit" tabindex="302" />
+						<div class="f-submit-wrap pull-right">
+							<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit btn btn-primary" tabindex="300" onClick="CombineCheckboxesToHidden('Registration', 'ResearchPurposeCheckBox', 'UserInfo1')"/>
+							<input type="reset" name="ResetButton" value="Clear Form" class="f-submit btn btn-warning" tabindex="301" />
+							<input type="submit" name="SubmitButton" value="Cancel - Exit Aeon System" class="f-submit btn btn-danger" tabindex="302" />
 						</div>
 					</fieldset>
 				</form>		
