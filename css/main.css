@@ -465,7 +465,7 @@ a.toplink {padding-left:10px; font-size:x-small}
 
 /* Calendar widget image icon */
 .calendarImg {background: url(images/calendar.gif) top left no-repeat;height:30px;background-color:#FFFFFF;padding-left:35px;border:1px solid #A9A9A9;}
-#ScheduledDate {background-image: url('https://aeon.library.ucr.edu/nonshib/css/Images/calendar.gif');background-repeat: no-repeat;vertical-align: middle;background-color: white;text-align:center;}
+#ScheduledDate {background-image: url('https://aeon.library.ucr.edu/nonshib/css/Images/calendar.gif');background-repeat: no-repeat;background-position:5px, 0;vertical-align: middle;background-color: white;text-align:center;}
 
 /*
 LEGAL

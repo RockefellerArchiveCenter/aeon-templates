@@ -28,8 +28,8 @@
     }
 
     $(document).ready(function () {
-        scheduledDateLabel = $('label[for="ScheduledDate"]');
-        userReviewLabel = $('label[for="UserReview"]');
+        scheduledDateLabel = $('.scheduledDateLabel');
+        userReviewLabel = $('.userReviewLabel');
 
         if ((scheduledDateLabel != null) && (userReviewLabel != null) && ($('#VisitScheduled') != null) && ($('#VisitReview') != null) && ($('#UserReview') != null)) {
 
