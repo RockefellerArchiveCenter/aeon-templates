@@ -3,18 +3,8 @@
 <title>Aeon Logout</title>
 <#INCLUDE filename="include_head.html">
 </head>
-<div id="navBar">
-</div>
 
-<div id="racBanner">
-	<div id="racLogo">
-		<a target="_blank" href="klematis_big.htm">
-		<img src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
-		</a>
-	</div>
-	<div id="racTitle">RACcess.rockarch.org</div>
-</div>
-<div class="clear2"></div>
+<#INCLUDE filename="include_header.html">
 
 <body id="type-a">
 	<script language="javascript" type="text/javascript">
@@ -27,7 +17,9 @@
 			<div id="content">
 			<div id="status"><#STATUS></div>
 			<p>If you are not redirected within five seconds, <a href="<#PARAM name='LogoutUrl'>">click here.</a></p>
+
 			<#INCLUDE filename="include_footer.html">
+			
 		</div>
 	</div>
 </body>
