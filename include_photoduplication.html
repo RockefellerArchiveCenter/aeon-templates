@@ -1,40 +1,49 @@
-<label for="ItemPages">
-	<span class="field">
-        <span class="req">*</span>
-		<span class="<#ERROR name="ERRORItemPages">"><b>Description of Materials</b></span>
-	</span>
-	<input id="ItemPages" name="ItemPages" type="text" size="90" class="f-name" tabindex="100" value="<#PARAM name="ItemPages">"><br />
-</label>
+<div class="form-group required">
+	<label for="ItemPages" class="col-sm-4 control-label">
+		<span class="<#ERROR name="ERRORItemPages">">Description of Materials</span>
+	</label>
+	<div class="col-sm-8">
+		<input id="ItemPages" name="ItemPages" type="text" class="f-name form-control" tabindex="100" value="<#PARAM name="ItemPages">">
+		<span class="help-block">Describe the materials you want duplicated.</span>
+	</div>
+</div>
 
-<label for="PageCount">
-	<span class="field">
-		<span class="<#ERROR name="ERRORPageCount">"><b>Image or Page Count</b></span>
-	</span>
-	<input id="PageCount" name="PageCount" type="text" size="95" class="f-name" tabindex="105" value="<#PARAM name="PageCount">"><br />
-</label>
+<div class="form-group">
+	<label for="PageCount" class="col-sm-4 control-label">
+		<span class="<#ERROR name="ERRORPageCount">">Image or Page Count</span>
+	</label>
+	<div class="col-sm-8">
+		<input id="PageCount" name="PageCount" type="text" class="f-name form-control" tabindex="105" value="<#PARAM name="PageCount">">
+	</div>
+</div>
 
-<label for="Format">
-	<span class="field"> 
-        <span class="req">*</span>       
-		<span class="<#ERROR name="ERRORFormat">"><b>Format</b></span>
-	</span>
-	<select id="Format" name="Format" size="1" class="f-name" tabindex="110">
-		<#OPTION name="Formats">
-	</select><br />
-</label>
+<div class="form-group required">
+	<label for="Format" class="col-sm-4 control-label">
+		<span class="<#ERROR name="ERRORFormat">">Format</span>
+	</label>
+	<div class="col-sm-8">
+		<select id="Format" name="Format" class="f-name form-control" tabindex="110">
+			<#OPTION name="Formats">
+		</select>
+	</div>
+</div>
 
-<label for="ShippingOption">
-	<span class="field">        
-		<span class="<#ERROR name="ERRORShippingOption">"><b>Shipping Option</b></span>
-	</span>
-	<select id="ShippingOption" name="ShippingOption" size="1" class="f-name" tabindex="115">
-		<#OPTION name="ShippingOptions">
-	</select><br />
-</label>     
+<div class="form-group">
+	<label for="ShippingOption" class="col-sm-4 control-label">  
+		<span class="<#ERROR name="ERRORShippingOption">">Shipping Option</span>
+	</label>
+	<div class="col-sm-8">
+		<select id="ShippingOption" name="ShippingOption" class="f-name form-control" tabindex="115">
+			<#OPTION name="ShippingOptions">
+		</select>
+	</div>
+</div>
 
-<label for="ForPublication">
-	<span class="field">        
-		<span class="<#ERROR name="ERRORForPublication">"><b>For Publication?</b></span>
-	</span>
-	<input id="ForPublication" name="ForPublication" type="checkbox" class="f-checkbox" tabindex="120" value="Yes" <#CHECKED name="ForPublication"> default="false" /><br />
-</label>      
+<div class="form-group">
+	<label for="ForPublication" class="col-sm-4 control-label">
+		<span class="<#ERROR name="ERRORForPublication">">For Publication?</span>
+	</label>
+	<div class="col-md-8">
+		<input id="ForPublication" name="ForPublication" type="checkbox" class="f-checkbox" tabindex="120" value="Yes" <#CHECKED name="ForPublication"> default="false" />
+	</div>
+</div>
