@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Aeon - Review Requests</title>
+<title>RACcess - Review Requests</title>
 <#INCLUDE filename="include_head.html">
 <#INCLUDE filename="include_head_request.html">
 <#INCLUDE filename="include_header.html">
@@ -17,32 +17,34 @@
 			<#INCLUDE filename="include_menu.html">
 			<div id="content">
 				<div id="status"><#STATUS></div>
-				<form action="aeon.dll" method="post" id="ViewUserReviewRequests" name="ViewUserReviewRequests" class="f-wrap-request">
+				<form action="aeon.dll" method="post" id="ViewUserReviewRequests" name="ViewUserReviewRequests" class="f-wrap-request form-inline" role="form">
 					<input type="hidden" name="AeonForm" value="ViewUserReviewRequests">
 					
-					Select: <a href="#" onclick="ToggleCheckBoxes('ViewUserReviewRequests', true);">All<a/>,&nbsp;<a href="#" onclick="ToggleCheckBoxes('ViewUserReviewRequests', false);">None<a/>
+					Select: <a href="#" onclick="ToggleCheckBoxes('ViewUserReviewRequests', true);">All</a>,&nbsp;<a href="#" onclick="ToggleCheckBoxes('ViewUserReviewRequests', false);">None</a>
 					
 					<div class="default-table">			
 						<#TABLE name="ViewUserReviewRequests" headerText="Requests In Review" noDataAction="ShowMessageRow" noDataMessage="No Requests" sortable="true" 
 						 column="TransactionNumber:TN" column="Title" column="ItemAuthor:Author/Creator" column="CallNumber:Call&nbsp;Number" column="ItemVolume:Volume/Box" column="TransactionStatus:Status" orderby="TransactionNumber DESC">
 					</div>
 					
-                    <div class="f-submit-wrap" align="left">
+                    <div class="col-sm-12 voffset1">
                         <fieldset>
-                            <label for="ScheduledDate">
-							        <span class="field">
-                                        <span id="ERRORScheduledDate" class="<#ERROR name="ERRORScheduledDate">"><b>Scheduled Date</b></span><br />								        
-								        <span class="note">Enter as M/D/YYYY</span>
-							        </span>
-							        <input id="ScheduledDate" name="ScheduledDate" class="f-name" tabindex="67" type="textbox" value="<#PARAM name="ScheduledDate">"><br />
-					        </label>
+                        	<div class="form-group">
+                            	<label for="ScheduledDate" class="col-sm-5 control-label">
+                            		<span id="ERRORScheduledDate" class="<#ERROR name="ERRORScheduledDate">">Scheduled Date</span>
+                            	</label>
+                            	<div class="col-sm-3">
+							        <input id="ScheduledDate" name="ScheduledDate" class="f-name form-control" tabindex="67" type="textbox" value="<#PARAM name="ScheduledDate">">
+							        <span class="help-block">Enter as M/D/YYYY</span>
+							    </div>
+							</div>
                         </fieldset>					
                     </div>
 
 					<div class="f-submit-wrap" align="right">						
-                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit Information" class="f-submit" tabindex="200" />
-                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit" tabindex="201" />
-						<input type="submit" name="SubmitButton" id="submitCancel" value="Cancel - Exit to Main Menu" class="f-submit" tabindex="202" />
+                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit Information" class="f-submit btn btn-primary" tabindex="200" />
+                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit btn btn-warning" tabindex="201" />
+						<input type="submit" name="SubmitButton" id="submitCancel" value="Cancel - Exit to Main Menu" class="f-submit btn btn-danger" tabindex="202" />
 					</div>
 				</form>
 				<#INCLUDE filename="include_footer.html">
