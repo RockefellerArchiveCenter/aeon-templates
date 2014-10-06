@@ -11,6 +11,10 @@ a.offsite:link, .offsite {padding-right: 12px;background: transparent url("image
 
 .iconlist{list-style: none;margin: 0px;padding: 0px;}
 
+/*Vertical offset*/
+.voffset1 {padding-top: 1em;}
+.voffset2 {padding-top: 2em;}
+
 /* LINKS */
 a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:none;color:#666666;cursor:pointer} 
 a:link, a:visited {color:#666666} 
@@ -34,7 +38,7 @@ label br {clear:left}*/
 /*form.f-wrap-1 label {clear:left;float:left;width:100%;border-top: 1px solid #fff}*/
 
 /* hide from IE mac \*/
-form.f-wrap-1 label {float:none}
+/*form.f-wrap-1 label {float:none}*/
 /* end hiding from IE5 mac */
 
 form.f-wrap-1 label input, form.f-wrap-1 label textarea, form.f-wrap-1 label select {width:15em;float:left;margin-left:10px}

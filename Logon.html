@@ -6,8 +6,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <link rel="apple-touch-icon" href="iphone-icon.png" />
+<link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
 <!--[if lte IE 6]>
 <link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
@@ -21,51 +23,53 @@
 
 <div id="racBanner">
 	<div id="racLogo">
-		<a target="_blank" href="klematis_big.htm">
+		<a target="_blank" href="/">
 		<img src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
 		</a>
 	</div>
-	<div id="racTitle">RACcess.rockarch.org</div>
+	<div id="racTitle"><h1><a href="/">RACcess.rockarch.org</a></h1></div>
 </div>
 <div class="clear2"></div>
 
 <body id="type-a">
 	<div id="wrap">
   		<div id="content-wrap">
-			<div id="content">
-				<form action="aeon.dll" method="post" name="Logon" class="f-wrap-1">
+			<div id="content col-sm-12">
+				<form action="aeon.dll" method="post" name="Logon" class="f-wrap-1 form-horizontal" role="form">
 					<input type="hidden" name="AeonForm" value="Logon">
 					<div id="logonform">
-						<div class="req"><b>*</b> Indicates required field</div>			
-						<fieldset>			
-							<h3>RACcess.rockarch.org Logon</h3>
-							<div id="status">Enter your user information below.<br />
-								Then press the Logon to Aeon button to continue.
-							</div>							
-							<label for="username">
-								<span class="field">
-									<span class="req">*</span>
-									<b>Username</b>
-								</span>
-								<input id="username" name="Username" type="text" class="f-name" tabindex="1" /><br />
-							</label>			
-							<label for="password">
-								<span class="field">
-									<span class="req">*</span>
-									<b>Password</b>
-								</span>
-								<input id="password" name="Password" type="password" class="f-name" tabindex="2" /><br />
-							</label>
+						<!-- <div class="req"><b>*</b> Indicates required field</div> -->			
+						<fieldset class="col-md-6">			
+							<h2 class="text-center">Logon</h2>
+							<!-- <div id="status">Enter your user information below.<br />
+								Then click the Logon button to continue.
+							</div> -->							
+							<div class="form-group required">
+								<label for="username" class="col-sm-3">Username</label>
+								<div class="col-sm-9">
+									<input id="username" name="Username" type="text" class="f-name form-control" tabindex="1" />
+								</div>
+							</div>
+
+							<div class="form-group required">
+								<label for="password" class="col-sm-3">Password</label>
+								<div class="col-sm-9">
+									<input id="password" name="Password" type="password" class="f-name form-control" tabindex="2" />
+									<span class="help-block"><a href="aeon.dll?Action=10&Form=84">Forgot your password?</a></span>
+								</div>
+							</div>
 									
-							<div class="f-submit-wrap">
-								<input type="submit" name="SubmitButton" value="Logon to Aeon" class="f-submit" tabindex="100" /><br />
+							<div class="f-submit-wrap pull-right">
+								<input type="submit" name="SubmitButton" value="Logon" class="f-submit btn btn-primary" tabindex="100" />
 							</div>
 						</fieldset>
 					</div>
 				</form>
 	
-				<a href="aeon.dll?Action=10&Form=84">Forgot Password?</a><br />
-				<a href="aeon.dll?Action=10&Form=79">First Time Users</a>
+				<div class="col-sm-6 text-center">
+					<h2><a href="aeon.dll?Action=10&Form=79">Create an account</a></h2>
+				</div>
+
 				<div id="footer">
 					&copy; 2011 <a href="http://www.atlas-sys.com">Atlas Systems, Inc.</a> All Rights Reserved.
 				</div>
