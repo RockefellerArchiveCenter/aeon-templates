@@ -25,11 +25,11 @@
                     <!-- <div class="req"><b>*</b> Indicates required field</div> -->
                     <fieldset>			
                         <h2 class="text-center">New Material Request</h2>
-                        <div id="stats" class="text-center"><#STATUS></div>
+                        <p id="status" class="text-center"><#STATUS></p>
                         <!-- <h3>Describe the item you want</h3> -->
                                         
                         <div class="form-group required">
-                            <label for="ItemTitle" class="col-sm-4 control-label">
+                            <label for="ItemTitle" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemTitle">">Collection Name/Book Title</span>
                             </label>
                             <div class="col-sm-8">
@@ -40,7 +40,7 @@
                         </div>		
                         
                         <div class="form-group">
-                            <label for="ItemSubTitle" class="col-sm-4 control-label">
+                            <label for="ItemSubTitle" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemSubTitle">">Record Group/Series</span>
                             </label>
                             <div class="col-sm-8">
@@ -51,7 +51,7 @@
                         </div>  
 
                         <div class="form-group">
-                            <label for="CallNumber" class="col-sm-4 control-label">
+                            <label for="CallNumber" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORCallNumber">">Finding Aid Number/Call Number</span>
                             </label>
                             <div class="col-sm-8">
@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="ItemAuthor" class="col-sm-4 control-label">
+                            <label for="ItemAuthor" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemAuthor">">Author</span>
                             </label>
                             <div class="col-sm-8">
@@ -69,7 +69,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="ItemDate" class="col-sm-4 control-label">
+                            <label for="ItemDate" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemDate">">Date(s)</span>
                             </label>
                             <div class="col-sm-8">
@@ -78,17 +78,17 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="ItemVolume" class="col-sm-4 control-label">
+                            <label for="ItemVolume" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemVolume">">Box/Reel Number</span>
                             </label>
                             <div class="col-sm-8">
                                 <input id="ItemVolume" name="ItemVolume" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="ItemVolume">">
                                 <span class="help-block">Include separation number if applicable.</span>
                             </div>
-                        </label>
+                        </div>
 
                         <div class="form-group">
-                            <label for="ItemIssue" class="col-sm-4 control-label">
+                            <label for="ItemIssue" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemIssue">">Folder/Frame Number</span>
                             </label>
                             <div class="col-sm-8">
@@ -97,7 +97,7 @@
                         </div>
                     
                         <div class="form-group">
-                            <label for="ItemInfo1" class="col-sm-4 control-label">
+                            <label for="ItemInfo1" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemInfo1">">Folder Title</span>
                             </label>
                             <div class="col-sm-8">
@@ -106,7 +106,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="ItemInfo2" class="col-sm-4 control-label">
+                            <label for="ItemInfo2" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORItemInfo2">">Link</span>
                             </label>
                             <div class="col-sm-8">
@@ -116,7 +116,7 @@
                         
                         <span class="<#PARAM name="RequestLinksVisible" enabled="RequestForEnabled" disabled="RequestForDisabled">">
                             <div class="form-group">
-                                <label for="RequestLink" class="col-sm-4 control-label">
+                                <label for="RequestLink" class="col-sm-3 control-label">
                                     <span class="<#ERROR name="ERRORRequestLink">">Request for</span>
                                 </label>
                                 <div class="col-sm-8">
@@ -128,7 +128,7 @@
                         </span>
 
                         <div class="form-group">
-                            <label for="SpecialRequest" class="col-sm-4 control-label">
+                            <label for="SpecialRequest" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORSpecialRequest">">Special Requests/Questions?</span>
                             </label>
                             <div class="col-sm-8">
@@ -140,7 +140,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="Notes" class="col-sm-4 control-label">
+                            <label for="Notes" class="col-sm-3 control-label">
                                 <span class="<#ERROR name="ERRORNotes">">My Notes</span>
                             </label>
                             <div class="col-sm-8">
