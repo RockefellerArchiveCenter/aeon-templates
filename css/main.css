@@ -29,9 +29,9 @@ label br {clear:left}*/
 */    
 /* FORMS - f-wrap-1 - simple form, headings on left, form elements on right */
 /*form.f-wrap-1 {width:100%;padding: .5em 0;background: #f6f6f6;border-top: 1px solid #d7d7d7;position:relative;border-radius: 10px;}*/
-form.f-wrap-1 fieldset {width:auto;margin: 0 1em}
-form.f-wrap-1 h3 {margin:0 0 .6em;font: bold 155% arial;color:#960}
-form.f-wrap-1 label {clear:left;float:left;width:100%;border-top: 1px solid #fff}
+/*form.f-wrap-1 fieldset {width:auto;margin: 0 1em}*/
+/*form.f-wrap-1 h3 {margin:0 0 .6em;font: bold 155% arial;color:#960}*/
+/*form.f-wrap-1 label {clear:left;float:left;width:100%;border-top: 1px solid #fff}*/
 
 /* hide from IE mac \*/
 form.f-wrap-1 label {float:none}
@@ -248,7 +248,8 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 /* RAC Logo and Title */
 #racBanner {float:left;margin-left:2%;margin-top:-2em;}
 #racBanner #racLogo {float:left;width:103px;height:140px;margin-right:2em;}
-#racBanner #racTitle {float:left;font-size: 3em;margin:0;text-decoration: none;color: #000000;font-family: 'Questrial', sans;margin-top: 30px;font-weight:bold;}
+#racBanner #racTitle {float:left; padding-top: 2em;}
+#racBanner #racTitle h1 a {font-size: 1.5em;margin:0;text-decoration: none;color: #000000;font-family: 'Questrial', sans;margin-top: 30px;font-weight:bold;}
 #racBanner #racTitle:hover {text-shadow:0 0 5px #c45414;}
     
 /* SEARCH */
