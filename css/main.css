@@ -257,13 +257,13 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 #racBanner #racTitle:hover {text-shadow:0 0 5px #c45414;}
     
 /* SEARCH */
-#search {color:#000066;font-weight:bold;position:relative;}
+/*#search {color:#000066;font-weight:bold;position:relative;}
 #search form {margin:0 0 5px 0}
 #search input.f-criteria {width:110px;margin: 0 0 0 0;height:1.6em}	
 #search label {padding:0 0 0 0;display:inline}
 #search input.f-submit {width:auto;font-size:81%;margin:0 0 -.15em;height:1.95em}
 #search #searchType input {margin: 3px 0px -0.4em 9px;height:1.2em}
-#search #searchType label {font-weight:normal;font-size:0.8em;padding:0px 0 0 5}
+#search #searchType label {font-weight:normal;font-size:0.8em;padding:0px 0 0 5}*/
     
 /* POWERED BY */
 #poweredby {width:96px;height:63px;position:absolute;top:-102px;right:0}
