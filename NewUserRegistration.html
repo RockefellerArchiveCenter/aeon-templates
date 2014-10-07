@@ -89,20 +89,20 @@
 							</div>
 						</div>
 						
-						<div class="form-group required">
-							<label for="State" class="col-sm-4 control-label">
-								<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
-							</label>
-							<div class="col-sm-5">
+							<div class="required col-sm-4 col-sm-offset-2">
+								<label for="State" class="col-sm-6 control-label">
+									<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
+								</label>
+								<div class="col-sm-6">
 								<select id="State" name="State" class="f-name form-control" tabindex="40">
 									<option>Choose a State</option>
 									<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
 								</select>
 							</div>
-						</div>
-						
-						<div class="form-group required">
-							<label for="Zip" class="col-sm-4 control-label">
+ 						</div>
+
+						<div class="form-group required col-sm-4">
+							<label for="Zip" class="col-sm-5 control-label">
 								<span class="<#ERROR name="ERRORZip">">ZIP/Postal Code</span>
 							</label>
 							<div class="col-sm-5">
@@ -125,10 +125,14 @@
 							<label for="Status" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORStatus">">Researcher Type</span>
 							</label>
-							<div class="col-sm-5">
+							<div class="col-sm-2">
 								<select id="StatusOption" name="Status" class="f-name form-control" tabindex="60">
 									<#OPTION name="Statuses">
 								</select>
+							</div>
+							<div class="col-sm-3">
+								<input type="text" class="f-name form-control" tabindex="61" />
+								<span class="help-block">If "Other" is selected, please describe here.</span>
 							</div>
 						</div>
 						
@@ -147,6 +151,7 @@
 							</label>
 							<div class="col-sm-5">
 								<input id="Department" name="Department" type="text" class="f-name form-control" tabindex="70" value="<#PARAM name="Department">">
+								<span class="help-block">The department within the institution with which you are affiliated</span>
 							</div>	
 						</div>
 						

@@ -237,7 +237,7 @@ ul {margin: .3em 0 1.5em 0;list-style-type:none}
 ul.related {margin-top: -1em}
 ol {margin: .5em .5em 1.5em}
 ol li {margin-left: 1.4em;padding-left: 0;background: none; list-style-type: decimal}
-li {line-height: 1.4em;padding-left: 15px;list-style-type:initial;background-repeat: no-repeat;} 
+/*li {line-height: 1.4em;padding-left: 15px;list-style-type:initial;background-repeat: no-repeat;} */
 li.doc {background-position: 3px -500px}
 ul.nomarker li {background:none;padding-left:0}
 
@@ -260,6 +260,10 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 #racBanner #racTitle {float:left; padding-top: 2em;}
 #racBanner #racTitle h1 a {font-size: 1.5em;margin:0;text-decoration: none;color: #000000;font-family: 'Questrial', sans;margin-top: 30px;font-weight:bold;}
 #racBanner #racTitle:hover {text-shadow:0 0 5px #c45414;}
+
+.account-buttons {
+	margin: 5em 2% 0 0; 
+}
     
 /* SEARCH */
 /*#search {color:#000066;font-weight:bold;position:relative;}
