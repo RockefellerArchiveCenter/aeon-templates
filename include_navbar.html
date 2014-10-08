@@ -1,27 +1,5 @@
-<html>
-<head>
-<meta http-equiv="Pragma" content="no-cache">
-<title>RACcess.rockarch.org Logon</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<link rel="apple-touch-icon" href="iphone-icon.png" />
-<link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
-<!--[if lte IE 6]>
-<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
-<![endif]-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!-- Logon.html -->
-</head>
-
-<!-- navbar -->
 <div class="navbar navbar-default" role="navigation">
-  <div class="contain		er-fluid">
+  <div class="container-fluid">
 
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -220,66 +198,3 @@
  
   </div>
 </div>
-<!-- end navbar -->
-
-<!-- header -->
-<div id="racBanner" class="container-fluid">
-	<div class="row">
-		<div id="racLogo" class="col-sm-1 col-sm-offset-1">
-			<a href="/aeon.dll">
-				<img class="img-responsive" src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
-			</a>
-		</div>
-		<div id="racTitle" class="col-sm-6"><h1><a href="/aeon.dll">RACcess.rockarch.org</a></h1></div>
-	</div>
-</div>
-<div class="clear2"></div>
-<!-- end header -->
-
-<body id="type-a">
-	<div id="wrap">
-  		<div id="content-wrap">
-			<div id="content col-sm-12">
-				<form action="aeon.dll" method="post" name="Logon" class="f-wrap-1 form-horizontal" role="form">
-					<input type="hidden" name="AeonForm" value="Logon">
-					<div id="logonform">
-						<!-- <div class="req"><b>*</b> Indicates required field</div> -->			
-						<fieldset class="col-sm-4 col-sm-offset-2">			
-							<!-- <h2 class="text-center">Logon</h2> -->
-							<!-- <div id="status">Enter your user information below.<br />
-								Then click the Logon button to continue.
-							</div> -->							
-							<div class="form-group required">
-								<label for="username" class="col-sm-3 control-label">Username</label>
-								<div class="col-sm-9">
-									<input id="username" name="Username" type="text" class="f-name form-control" tabindex="1" />
-								</div>
-							</div>
-
-							<div class="form-group required">
-								<label for="password" class="col-sm-3 control-label">Password</label>
-								<div class="col-sm-9">
-									<input id="password" name="Password" type="password" class="f-name form-control" tabindex="2" />
-									<span class="help-block"><a href="aeon.dll?Action=10&Form=84">Forgot your password?</a></span>
-								</div>
-							</div>
-									
-							<div class="f-submit-wrap pull-right">
-								<input type="submit" name="SubmitButton" value="Logon" class="f-submit btn btn-primary" tabindex="100">
-							</div>
-						</fieldset>
-					</div>
-				</form>
-	
-				<div class="col-sm-4 text-center">
-					<a class="btn btn-lg btn-default" href="aeon.dll?Action=10&Form=79">Create an account</a>
-				</div>
-
-				<div id="footer">
-					&copy; 2011 <a href="http://www.atlas-sys.com">Atlas Systems, Inc.</a> All Rights Reserved.
-				</div>
-			</div>    
-  		</div>
-	</div>
-</body>
-</html>
