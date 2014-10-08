@@ -1,14 +1,16 @@
-<div id="utility">
+<div id="utility" class="col-sm-2 col-sm-offset-1">
 	<ul id="nav">
 		<!-- <li class="active"><a href="<#ACTION action="99">">Logoff <#USER field="FirstName"></a></li> -->
 		<!-- <li class="active"><a href="<#ACTION action="10" form="10">">Main Menu</a></li> -->
-		<li class="active"><a href="#">New Request</a>
+		<li class="active">
+			<h4>New Request</h4>
 			<ul>
 				<li><a href="<#ACTION action="10" form="21">">Material Request</a></li>
 				<li><a href="<#ACTION action="10" form="23">">Duplication Order</a></li>
 			</ul>
 		</li>
-		<li class="active"><a href="#">Requests</a>
+		<li class="active">
+			<h4>Requests</h4>
 			<ul>
 				<li><a href="<#ACTION action="10" form="76">">Review Requests</a></li>
 				<li><a href="<#ACTION action="10" form="62">">Outstanding Requests</a></li>
@@ -18,10 +20,12 @@
 						
 			</ul>
 		</li>
-		<li class="active"><a href="#">Search Requests</a>
+		<li class="active">
+			<h4>Search Requests</h4>
 			<#INCLUDE filename="include_search.html">
 		</li>
-		<li class="active"><a href="#">Orders</a>
+		<li class="active">
+			<h4>Orders</h4>
 			<ul>
 				<li><a href="<#ACTION action="10" form="77">">Order Estimates</a></li>
 				<li><a href="<#ACTION action="10" form="78">">Invoices</a></li>
@@ -29,17 +33,13 @@
 			</ul>
 		</li>
 		<li class="active"><a href="<#ACTION action="10" form="73">">Notifications</a></li>
-		<li class="active"><a href="#">Activities</a>
-			<ul>
-				<li class="first"><a href="<#ACTION action="10" form="90">">Activities</a></li>
-			</ul>
-		</li>
+		<li class="active"><a href="<#ACTION action="10" form="90">">Activities</a>
 		<!-- <li class="active"><a href="#">Preferences</a>
 			<ul>
 				<li class="first"><a href="<#ACTION action="10" form="81">">Change User Information</a></li>
 				<li class="last"><a href="<#ACTION action="10" form="83">">Change Password</a></li>
 			</ul>
 		</li> -->
-		<li class="active"><a href="<#ACTION action="10" form="1">">About Aeon</a></li>
+		<li class="active"><a href="<#ACTION action="10" form="1">">About RACcess</a></li>
 	</ul>
 </div>

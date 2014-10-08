@@ -7,11 +7,11 @@
 <#INCLUDE filename="include_header.html">
 
 <body id="type-b">
-	<div id="wrap">
+	<div id="wrap" class="container-fluid">
   		
-  		<div id="content-wrap">
+  		<div id="content-wrap" class="row">
   			<#INCLUDE filename="include_menu.html">
-    		<div id="content">
+    		<div id="content" class="col-sm-8">
 			<div id="status"><#STATUS></div>
 				<#MENU name="transaction" separator="|" item="Edit:Edit Request" item="Cancel:Cancel Request"  item="RemoveHold:Remove from Hold" item="Resubmit:Resubmit Request" item="Clone:Clone Request" item="CloneToCopy:Clone to Copy" item="ViewFile:View Item" item="DeleteFile:Delete Item" item="Submit:Submit Request" item="ApproveOrderEstimate:Approve Estimate" item="ApproveOrderBilling:Approve Billing" item="ExportRIS:Export Citation">
 		
