@@ -24,7 +24,7 @@
 					
 					<div class="default-table">			
 						<#TABLE name="ViewUserReviewRequests" headerText="Requests In Review" noDataAction="ShowMessageRow" noDataMessage="No Requests" sortable="true" 
-						 column="TransactionNumber:TN" column="Title" column="ItemAuthor:Author/Creator" column="CallNumber:Call&nbsp;Number" column="ItemVolume:Volume/Box" column="TransactionStatus:Status" orderby="TransactionNumber DESC">
+						 column="TransactionNumber:ID" column="Title" column="ItemAuthor:Author" column="CallNumber:Finding&nbsp;Aid/Call&nbsp;Number" column="ItemVolume:Box/Reel&nbsp;Number" column="TransactionStatus:Status" orderby="TransactionNumber DESC">
 					</div>
 					
                     <div class="col-sm-12 voffset1">
@@ -42,9 +42,9 @@
                     </div>
 
 					<div class="f-submit-wrap" align="right">						
-                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit Information" class="f-submit btn btn-primary" tabindex="200" />
-                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit btn btn-warning" tabindex="201" />
-						<input type="submit" name="SubmitButton" id="submitCancel" value="Cancel - Exit to Main Menu" class="f-submit btn btn-danger" tabindex="202" />
+                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit" class="f-submit btn btn-primary" tabindex="200" />
+                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit btn btn-danger" tabindex="201" />
+						<!-- <input type="submit" name="SubmitButton" id="submitCancel" value="Cancel - Exit to Main Menu" class="f-submit btn btn-danger" tabindex="202" /> -->
 					</div>
 				</form>
 				<#INCLUDE filename="include_footer.html">

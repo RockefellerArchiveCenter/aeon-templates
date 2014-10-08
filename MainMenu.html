@@ -18,7 +18,7 @@
                 <div class="alert alert-info"><#ALERTS></div>
                 <div class="default-table" id="table-main-outstanding-requests">
                     <#TABLE name="ViewOutstandingRequests" headerText="Outstanding Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" sortable="true" 
-                    column="TransactionNumber:TN" column="Title" column="ItemAuthor:Author/Creator" column="ItemVolume:Volume/Box" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" orderby="TransactionNumber DESC">
+                    column="TransactionNumber:ID" column="Title" column="ItemAuthor:Author" column="ItemVolume:Box/Reel&nbsp;Number" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" orderby="TransactionNumber DESC">
                 </div>
                 <#INCLUDE filename="include_footer.html">
             </div>
