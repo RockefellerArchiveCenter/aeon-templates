@@ -2,15 +2,14 @@
 <head>
 <title>RACcess - Edit Request</title>
 <#INCLUDE filename="include_head.html">
-<#INCLUDE filename="include_header_request.html">
 </head>
-<#INCLUDE filename="include_head_request.html">
+<#INCLUDE filename="include_header.html">
 <body id="type-b">
     <div id="wrap">
         <div id="content-wrap">
             <#INCLUDE filename="include_menu.html">
             <div id="content">
-                <form action="aeon.dll" method="post" name="EditDefaultRequest" class="f-wrap-request">
+                <form action="aeon.dll" method="post" name="EditDefaultRequest" class="f-wrap-request form-horizontal" role="form">
                     <input type="hidden" name="AeonForm" value="EditDefaultRequest">
                     <input type="hidden" name="Username" value="<#PARAM name="Username">">
                     <input type="hidden" name="SessionID" value="<#PARAM name="SessionID">">
@@ -20,112 +19,128 @@
                     <input type="hidden" name="ItemInfo4" value="<#PARAM name="ItemInfo4">">
                     <input type="hidden" name="RequestType" value="Loan">
 
-                    <div class="req"><b>*</b> Indicates required field</div>
-                    <fieldset>
-                        <h3>Edit Material Request</h3>
-                        <#STATUS>
-                        <h2>Describe the item you want</h2>
+                    <fieldset>          
+                        <h2 class="text-center">Edit Material Request</h2>
+                        <p id="status" class="text-center"><#STATUS></p>
+                        <!-- <h3>Describe the item you want</h3> -->
+                                        
+                        <div class="form-group required">
+                            <label for="ItemTitle" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemTitle">">Collection Name/Book Title</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <textarea id="ItemTitle" name="ItemTitle" rows="2" cols="40" class="f-name form-control" tabindex="5"><#PARAM name="ItemTitle"></textarea>
+                            </div>
+                        </div>      
                         
-                        <label for="ItemTitle">
-                            <span class="field">
-                                <span class="req">*</span>
-                                <span class="<#ERROR name="ERRORItemTitle">"><b>Collection Name/Book Title</b></span><br />
-                            </span>
-                            <textarea id="ItemTitle" name="ItemTitle" rows="2" cols="40" class="f-name" tabindex="5"><#PARAM name="ItemTitle"></textarea><br />
-                        </label>		
+                        <div class="form-group">
+                            <label for="ItemSubTitle" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemSubTitle">">Record Group/Series</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <textarea id="ItemSubTitle" name="ItemSubTitle" rows="2" class="f-name form-control" tabindex="15"><#PARAM name="ItemSubTitle"></textarea>
+                            </div>
+                        </div>  
 
-                        <label for="ItemInfo1">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemInfo1">"><b>Record Group/Subgroup</b></span><br />
-                            </span>
-                            <textarea id="ItemInfo1" name="ItemInfo1" rows="2" cols="40" class="f-name" tabindex="10"><#PARAM name="ItemInfo1"></textarea><br />
-                        </label>
-                        
-                        <label for="ItemSubTitle">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemSubTitle">"><b>Series/Subseries</b></span>
-                            </span>
-                            <textarea id="ItemSubTitle" name="ItemSubTitle" rows="2" cols="40" class="f-name" tabindex="15"><#PARAM name="ItemSubTitle"></textarea><br />
-                        </label>  
+                        <div class="form-group">
+                            <label for="CallNumber" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORCallNumber">">Finding Aid Number/Call Number</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="CallNumber" name="CallNumber" type="text" class="f-name form-control" tabindex="35" value="<#PARAM name="CallNumber">">
+                            </div>
+                        </div>
 
-                        <label for="ItemInfo2">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemInfo2">"><b>Other Level</b></span><br />
-                            </span>
-                            <textarea id="ItemInfo2" name="ItemInfo2" rows="2" cols="40" class="f-name" tabindex="20"><#PARAM name="ItemInfo2"></textarea><br />
-                        </label>
-                            
-                        <label for="ItemAuthor">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemAuthor">"><b>Author/Creator</b></span>
-                            </span>
-                            <input id="ItemAuthor" name="ItemAuthor" type="text" size="40" class="f-name" tabindex="25" value="<#PARAM name="ItemAuthor">"><br />						
-                        </label>
+                        <div class="form-group">
+                            <label for="ItemAuthor" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemAuthor">">Author</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemAuthor" name="ItemAuthor" type="text" class="f-name form-control" tabindex="25" value="<#PARAM name="ItemAuthor">">
+                            </div>
+                        </div>
 
-                        <label for="ItemDate">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemDate">"><b>Date(s)</b></span>
-                            </span>
-                            <input id="ItemDate" name="ItemDate" type="text" size="40" class="f-name" tabindex="30" value="<#PARAM name="ItemDate">"><br />						
-                        </label>
+                        <div class="form-group">
+                            <label for="ItemDate" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemDate">">Date(s)</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemDate" name="ItemDate" type="text" class="f-name form-control" tabindex="30" value="<#PARAM name="ItemDate">">
+                            </div>
+                        </div>
 
-                        <label for="CallNumber">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORCallNumber">"><b>Finding Aid Number/Call Number</b></span>
-                            </span>
-                            <input id="CallNumber" name="CallNumber" type="text" size="20" class="f-name" tabindex="35" value="<#PARAM name="CallNumber">"><br />						
-                        </label>
+                        <div class="form-group">
+                            <label for="ItemVolume" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemVolume">">Box/Reel Number</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemVolume" name="ItemVolume" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="ItemVolume">">
+                                <!-- <span class="help-block">Include separation number if applicable.</span> -->
+                            </div>
+                        </div>
 
-                        <label for="ItemVolume">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemVolume">"><b>Box Number/Container</b></span></br>
-                                <span class="note">Include separation number if applicable.</span>
-                            </span>
-                            <input id="ItemVolume" name="ItemVolume" type="text" size="40" class="f-name" tabindex="40" value="<#PARAM name="ItemVolume">"><br />						
-                        </label>
-
-                        <label for="ItemIssue">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemIssue">"><b>Folder Number</b></span>
-                            </span>
-                            <input id="ItemIssue" name="ItemIssue" type="text" size="40" class="f-name" tabindex="45" value="<#PARAM name="ItemIssue">"><br />						
-                        </label>
+                        <div class="form-group">
+                            <label for="ItemIssue" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemIssue">">Folder/Frame Number</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemIssue" name="ItemIssue" type="text" class="f-name form-control" tabindex="45" value="<#PARAM name="ItemIssue">">
+                            </div>
+                        </div>
                     
-                        <label for="ItemInfo3">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORItemInfo3">"><b>Folder Title</b></span>
-                            </span>
-                            <input id="ItemInfo3" name="ItemInfo3" type="text" size="20" class="f-name" tabindex="50" value="<#PARAM name="ItemInfo3">"><br />						
-                        </label>
+                        <div class="form-group">
+                            <label for="ItemInfo1" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemInfo1">">Folder Title</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemInfo1" name="ItemInfo1" type="text" class="f-name form-control" tabindex="50" value="<#PARAM name="ItemInfo1">">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ItemInfo2" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORItemInfo2">">Link</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <input id="ItemInfo2" name="ItemInfo2" type="text" class="f-name form-control" tabindex="50" value="<#PARAM name="ItemInfo2">">
+                            </div>
+                        </div>
                         
                         <span class="<#PARAM name="RequestLinksVisible" enabled="RequestForEnabled" disabled="RequestForDisabled">">
-                             <label for="RequestLink">
-                                <span class="field">
-                                    <span class="<#ERROR name="ERRORRequestLink">"><b>Request for</b></span>
-                                </span>
-                                <select id="RequestLink" name="RequestLink" size="1" class="f-name" tabindex="">
-                                    <#OPTION name="RequestLinks" hideUsernames="true">
-                                </select><br />
-                            </label>
+                            <div class="form-group">
+                                <label for="RequestLink" class="col-sm-3 control-label">
+                                    <span class="<#ERROR name="ERRORRequestLink">">Request for</span>
+                                </label>
+                                <div class="col-sm-8">
+                                    <select id="RequestLink" name="RequestLink" class="f-name form-control" tabindex="90">
+                                        <#OPTION name="RequestLinks" hideUsernames="true">
+                                    </select>
+                                    <span class="help-block">If desired, select another user or activity for this request.</span>
+                                </div>
+                            </div>
                         </span>
                         
                         <#INCLUDE type="photoduplication" filename="include_photoduplication.html">
 
-                        <label for="SpecialRequest">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORSpecialRequest">"><b>Special Requests/Questions?</b></span><br />
-                                <span class="note">Please enter any special requests or questions for RAC staff.</span>
-                            </span>
-                            <textarea id="SpecialRequest" name="SpecialRequest" rows="2" cols="40" class="f-name" tabindex="200"><#PARAM name="SpecialRequest"></textarea><br />
-                        </label>
-
-                       <label for="Notes">
-                            <span class="field">
-                                <span class="<#ERROR name="ERRORNotes">"><b>My Notes</b></span><br />
-                                <span class="note">Enter any notes about this request for your personal reference.</span>
-                            </span>
-                            <textarea id="Notes" name="Notes" rows="2" cols="40" class="f-name" tabindex="205"><#PARAM name="Notes"></textarea><br />
-                        </label>
+                        <div class="form-group">
+                            <label for="SpecialRequest" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORSpecialRequest">">Special Requests/Questions?</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <textarea id="SpecialRequest" name="SpecialRequest" rows="2" class="f-name form-control" tabindex="200"><#PARAM name="SpecialRequest"></textarea>
+                                <span class="help-block">Please enter any special requests or questions for RAC staff.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="Notes" class="col-sm-3 control-label">
+                                <span class="<#ERROR name="ERRORNotes">">My Notes</span>
+                            </label>
+                            <div class="col-sm-8">
+                                <textarea id="Notes" name="Notes" rows="2" class="f-name form-control" tabindex="205"><#PARAM name="Notes"></textarea>
+                                <span class="help-block">Enter any notes about this request for your personal reference.</span>
+                            </div>
+                        </div>
 
                         <#INCLUDE filename="include_scheduleddate_review_toggle.html">
                         

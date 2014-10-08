@@ -16,9 +16,9 @@ a.offsite:link, .offsite {padding-right: 12px;background: transparent url("image
 .voffset2 {padding-top: 2em;}
 
 /* LINKS */
-a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:none;color:#666666;cursor:pointer} 
-a:link, a:visited {color:#666666} 
-a:hover,a:active {color:#069} 
+a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:none;color:#c45414;cursor:pointer} 
+a:link, a:visited {color:#c45414} 
+a:hover,a:active {color:#c60} 
 
 /* FORMS */
 form {margin: 0 0 1.5em}
