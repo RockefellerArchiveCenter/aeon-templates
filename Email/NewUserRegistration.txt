@@ -1,42 +1,37 @@
 Dear <#USER field='FirstName'> <#USER field='LastName'>,
 
-Thank you for registering to use the <#LOCALINFO field='LibraryName'>.
+Thank you for registering to use the collections at the Rockefeller Archive Center.
 
-Upon your first visit, please be prepared to present government-issued identification to verify the credentials you submitted as part of the online registration process.
+Please feel free to contact the Rockefeller Archive Center reference staff at <#LOCALINFO field='GeneralEmailAddress'> with any questions concerning the archival material available for research.
 
-In the meantime, you may proceed to place advance requests to view materials in our reading room through our online catalog and finding aids. You may also place requests for photoduplication orders through your research account if you know already what materials you would like to have reproduced.
+Upon your first visit to the Archive Center, please be prepared to present government-issued identification. 
 
-To access your research account at <#LOCALINFO field='SystemName'>, you may login with the username (<#USER field='Username'>) and password you created during the registration process by visiting: <#LOCALINFO field='SystemURL'>.
+You may place advance requests to view materials in our reading room through our online catalog, <a href="http://dimes.rockarch.org">DIMES</a>. You may also place requests for duplication orders through your research account if you know already what materials you would like to have reproduced.
 
-A summary of the information you provided during the registration process is included at the end of this message for your convenient reference. You may also refer to update these and other details from the Change User Information menu option in your research account.
+To access your research account at RACcess, login with the username <#USER field='Username'>) and password you created during the registration process by visiting: <#LOCALINFO field='SystemURL'>.
 
-Should you have any questions or comments about this service, please feel free to contact us at:
+A summary of the information you provided during the registration process is included at the end of this message, for your reference. You may update these and other details from the My Account menu option in your research account.
 
-  <#LOCALINFO field='GeneralEMailAddress'>
+Should you have any questions or comments about this service, please feel free to contact us at: <#LOCALINFO field='GeneralEMailAddress'> or <#LOCALINFO field='GeneralPhone'>. 
 
-   or
+We look forward to working with you!
 
-   <#LOCALINFO field='GeneralPhone'>
-
-We look forward to serving you. 
-
-Yours sincerely,
-
-<#LOCALINFO field='LibraryName'>
-<#LOCALINFO field='InstitutionName'>
-
-Research Account Summary:
-Username: <#USER field='Username'>
-<#USER field='IDType'>: <#USER field='ID'>
-Status: <#USER field='Status'>
+Your Account Summary:
+Username: <#USER field='Username'> 
+Name: <#USER field='FirstName'> <#USER field='LastName'>
+Researcher Type: <#USER field='Status'>
 Department: <#USER field='Department'>
-Organization: <#USER field='Organization'>
+Institutional Affiliation: <#USER field='Organization'>
 Phone: <#USER field='Phone'>
-E-mail Address: <#USER field='EmailAddress'>
-Address:
-<#USER field='Address'>
+E-mail Address: <#USER field='E-mail Address'>
+Address: <#USER field='Address'>
 <#USER field='Address2'>
-<#USER field='City'> <#USER field='State'> <#USER field='Zip'>
-Research Topics:
-<#USER field='ResearchTopics'>
+<#USER field='City'>, <#USER field='State'> <#USER field='Zip'>
+<#USER field='Country'>
+Research Topics: <#USER field='ResearchTopics'>
+
+<#LOCALINFO field='SystemName'>
+<#LOCALINFO field='InstitutionName'>
+<#LOCALINFO field='SystemURL'>
+ 
 
