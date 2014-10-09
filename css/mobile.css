@@ -102,11 +102,15 @@
         color: #000066;
     }
 
+    #racTitle h1 {font-size:1.7em;}
+
+
+
     /* SEARCH */
-    #search
+ /*   #search
     {
         display: none;
-    }
+    }*/
 
     /* LAYOUT - main body of page */
 
@@ -170,7 +174,7 @@
     
     #nav a, #nav a:link, #nav a:visited, #nav a:hover, #nav a:active
     {
-        border-top: 1px solid #999;
+        /*border-top: 1px solid #999;*/
         font-size: 1.2em;
     }
     
@@ -199,7 +203,7 @@
     #nav li.active li a, #nav li.active li a:link, #nav li.active li a:visited
     {
         line-height: 1.4;
-        padding-left: 0px;
+        padding-left: 5px;
         background: #fff;
         font-weight: normal;
         width: auto;
@@ -214,6 +218,10 @@
     #nav li.active li.active a:link, #nav li.active li.active a:visited, #nav li.active li.active a:hover, #nav li.active li.active a:active
     {
         font-weight: bold;
+    }
+
+    .account-buttons {
+        margin:0;
     }
 
     .default-table
