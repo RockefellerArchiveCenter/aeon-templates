@@ -9,7 +9,7 @@
 		<div id="content-wrap" class="row">
 			<#INCLUDE filename="include_menu.html">
 			<div id="content" class="col-sm-8">
-			<div id="status"><#STATUS></div>
+			<div id="status" class="text-center"><#STATUS></div>
 				<div class="default-table">			
 					<#TABLE name="ViewActivities" headerText="Activities" noDataAction="ShowMessageRow" noDataMessage="No Activities" column="DownloadDetails:Download" column="ID" column="Name" column="Description" column="ActivityStatus:Status" column="BeginDate:Begin Date" column="EndDate:End Date" orderby="BeginDate, EndDate">
 				</div>
