@@ -299,28 +299,33 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 
 /* ALERTS */
     
-/*.alertNone {color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6}
-.alertNone p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
+.alertNone { display:none;/*color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6*/}
+.alertNone h4 {margin-top: 0;color: inherit;}
+/*.alertNone p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
 .alertNone p {border:none;margin: 0 0 0.5em;color:#444}
-.alertNone a {font-weight:bold}
+.alertNone a {font-weight:bold}*/
 
-.alertSystem {color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6}
-.alertSystem p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
+.alertSystem {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #fcf8e3;border-color: #faebcc;color: #8a6d3b;}
+.alertSystem h4 {margin-top: 0;color: inherit;}
+/*.alertSystem p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
 .alertSystem p {border:none;margin: 0 0 0.5em;color:#444}
-.alertSystem a {font-weight:bold}
+.alertSystem a {font-weight:bold}*/
 
-.alertUser {color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6}
-.alertUser p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
+.alertUser {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #fcf8e3;border-color: #faebcc;color: #8a6d3b;}
+.alertUser h4 {margin-top: 0;color: inherit;}
+/*.alertUser p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
 .alertUser p {border:none;margin: 0 0 0.5em;color:#444}
-.alertUser a {font-weight:bold}
+.alertUser a {font-weight:bold}*/
 
-.alertStatus {color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6}
-.alertStatus p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
+.alertStatus {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #fcf8e3;border-color: #faebcc;color: #8a6d3b;}
+.alertStatus h4 {margin-top: 0;color: inherit;}
+/*.alertStatus p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
 .alertStatus p {border:none;margin: 0 0 0.5em;color:#444}
-.alertStatus a {font-weight:bold}
+.alertStatus a {font-weight:bold}*/
 
-.alertDeliveryLocation {color:#333;padding: 0px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6}
-.alertDeliveryLocation p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
+.alertDeliveryLocation {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #fcf8e3;border-color: #faebcc;color: #8a6d3b;}
+.alertDeliveryLocation h4 {margin-top: 0;color: inherit;}
+/*.alertDeliveryLocation p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #333399;color:#333399}
 .alertDeliveryLocation p {border:none;margin: 0 0 0.5em;color:#444}
 .alertDeliveryLocation a {font-weight:bold}*/
 
@@ -445,9 +450,9 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 #faq-contents li {font-weight:normal;line-height: 1.4em;padding-left: 0px;background-repeat: no-repeat;list-style-type:initial;} 
 
 /*#status {font-family: Arial, Helvetica, sans-serif; margin:0 0 0 0;padding-bottom:10px;color:#333333;border:none}*/
-.statusNormal {color:#333333}
-.statusInformation {color:#0000FF}
-.statusError {color:#FF0000}
+.statusNormal {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #dff0d8;border-color: #d6e9c6;color: #3c763d;display:inline-block;}
+.statusInformation {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #d9edf7;border-color: #bce8f1;color: #31708f;display:inline-block;}
+.statusError {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;background-color: #f2dede;border-color: #ebccd1;color: #a94442;display:inline-block;}
 
 .NLMDDSRequest {margin-bottom:20px}
 
