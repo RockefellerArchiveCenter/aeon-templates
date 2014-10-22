@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Aeon - Change User Information</title>
+<title>RACcess - Change User Information</title>
 <#INCLUDE filename="include_head.html">
 <script type="text/javascript" src="js/CheckboxHandler.js"></script>
 </head>
@@ -89,10 +89,7 @@
 								<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
 							</label>
 							<div class="col-sm-5">
-								<select id="State" name="State" class="f-name form-control" tabindex="40">
-									<option>Choose a State</option>
-									<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
-								</select>
+								<input id="State" name="State" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="State">">
 							</div>
 						</div>
 						
@@ -125,6 +122,10 @@
 									<#OPTION name="Statuses">
 								</select>
 							</div>
+							<div class="col-sm-3">
+								<input id="UserInfo4" name="UserInfo4" type="text" class="f-name form-control" tabindex="61" value="<#PARAM name="UserInfo4">">
+								<span class="help-block">If "Other" is selected, please describe here.</span>
+							</div>
 						</div>
 						
 						<div class="form-group">
@@ -150,8 +151,7 @@
 								<span class="<#ERROR name="ERRORResearchTopics">">Research Topics</span>
 							</label>
 							<div class="col-sm-5">
-								<textarea id="ResearchTopics" name="ResearchTopics" rows="2" class="f-name form-control" tabindex="110"><#PARAM name="ResearchTopics">
-								</textarea>
+								<textarea id="ResearchTopics" name="ResearchTopics" rows="2" class="f-name form-control" tabindex="110"><#PARAM name="ResearchTopics"></textarea>
 							</div>
 						</div>
 						

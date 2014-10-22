@@ -6,7 +6,7 @@ Please feel free to contact the Rockefeller Archive Center reference staff at <#
 
 Upon your first visit to the Archive Center, please be prepared to present government-issued identification. 
 
-You may place advance requests to view materials in our reading room through our online catalog, <a href="http://dimes.rockarch.org">DIMES</a>. You may also place requests for duplication orders through your research account if you know already what materials you would like to have reproduced.
+You may place advance requests to view materials in our reading room through our online catalog, DIMES (http://dimes.rockarch.org). You may also place requests for duplication orders through your research account if you know already what materials you would like to have reproduced.
 
 To access your research account at RACcess, login with the username <#USER field='Username'>) and password you created during the registration process by visiting: <#LOCALINFO field='SystemURL'>.
 
@@ -33,5 +33,3 @@ Research Topics: <#USER field='ResearchTopics'>
 <#LOCALINFO field='SystemName'>
 <#LOCALINFO field='InstitutionName'>
 <#LOCALINFO field='SystemURL'>
- 
-
