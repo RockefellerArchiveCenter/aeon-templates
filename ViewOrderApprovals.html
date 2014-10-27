@@ -24,8 +24,8 @@
 					</div>
 					
 					<div class="f-submit-wrap" align="right">
-						<input type="submit" name="SubmitButton" value="Approve Orders" class="f-submit btn btn-primary" tabindex="200" />                        
-						<input type="submit" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="202" />
+						<input type="submit" name="SubmitButton" value="Approve Orders" class="f-submit btn btn-primary" tabindex="200" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Approve Billing');"/>                        
+						<input type="submit" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="202" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Approve Billing');"/>
 					</div>
 				</form>
 				<#INCLUDE filename="include_footer.html">

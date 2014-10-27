@@ -1,4 +1,13 @@
 <div class="f-submit-wrap pull-right">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var value = $('h2').text();
+			$('.f-submit-wrap input').each(function(){
+				var attribute = "ga(send', 'event', 'Request Buttons', '" + $(this).attr('value') + "', '" + value + "')";
+				$(this).attr('onclick', attribute);
+			});
+		});
+	</script>
 	<input type="submit" id="buttonSubmitRequest" name="SubmitButton" value="Submit Request" class="f-submit btn btn-primary" tabindex="600" />
 	<input type="reset" name="ResetButton" value="Clear Form" class="f-submit btn btn-warning" tabindex="601" />
 	<input type="submit" id="buttonCancel" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="602" />

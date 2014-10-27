@@ -42,8 +42,8 @@
                     </div>
 
 					<div class="f-submit-wrap" align="right">						
-                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit" class="f-submit btn btn-primary" tabindex="200" />
-                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit btn btn-danger" tabindex="201" />
+                        <input type="submit" name="SubmitButton" id="submitInformation" value="Submit" class="f-submit btn btn-primary" tabindex="200" onclick="ga('send', 'event', 'Requests', 'Approve', 'Review Requests');"/>
+                        <input type="submit" name="SubmitButton" id="submitCancelRequests" value="Cancel Requests" class="f-submit btn btn-danger" tabindex="201" onclick="ga('send', 'event', 'Requests', 'Cancel Reqeusts', 'Review Requests');"/>
 						<!-- <input type="submit" name="SubmitButton" id="submitCancel" value="Cancel - Exit to Main Menu" class="f-submit btn btn-danger" tabindex="202" /> -->
 					</div>
 				</form>
