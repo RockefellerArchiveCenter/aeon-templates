@@ -6,9 +6,9 @@ Please feel free to contact the Rockefeller Archive Center reference staff at <#
 
 You may place advance requests to view materials in our reading room through our online catalog, DIMES (http://dimes.rockarch.org). You may also place requests for duplication orders through your research account if you already know the specific materials you would like to have reproduced.
 
-To access your research account at RACcess, visit <#System.SystemURL> and  login with the username <#User.Username>) and password you created during the registration process.
+To access your research account at RACcess, visit <#LOCALINFO field='SystemURL'> and login with the username and password you created during the registration process.
 
-Should you have any questions or comments about this service, please feel free to contact us at: <#System.GeneralEMailAddress> or <#System.GeneralPhone>.  
+Should you have any questions or comments about this service, please feel free to contact us at: <#LOCALINFO field='GeneralEMailAddress'> or <#LOCALINFO field='GeneralPhone'>.  
 
 We look forward to working with you!
 
@@ -19,7 +19,7 @@ Researcher Type: <#USER field='Status'>
 Department: <#USER field='Department'>
 Institutional Affiliation: <#USER field='Organization'>
 Phone: <#USER field='Phone'>
-E-mail Address: <#USER field='E-mail Address'>
+E-mail Address: <#USER field='EmailAddress'>
 Address: <#USER field='Address'>
 <#USER field='Address2'>
 <#USER field='City'>, <#USER field='State'> <#USER field='Zip'>
