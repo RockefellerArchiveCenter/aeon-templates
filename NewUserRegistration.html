@@ -89,18 +89,14 @@
 							</div>
 						</div>
 						
-							<div class="required col-sm-4 col-sm-offset-2">
-								<label for="State" class="col-sm-6 control-label">
-									<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
-								</label>
-								<div class="col-sm-6">
-									<input id="State" name="State" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="State">">
-								<!-- <select id="State" name="State" class="f-name form-control" tabindex="40">
-									<option>Choose a State</option>
-									<#OPTION name="States" selectedValue="<#PARAM name=State>" defaultValue="Choose a State" />
-								</select> -->
+						<div class="col-sm-4 col-sm-offset-2">
+							<label for="State" class="col-sm-6 control-label">
+								<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
+							</label>
+							<div class="col-sm-6">
+								<input id="State" name="State" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="State">">
 							</div>
- 						</div>
+							</div>
 
 						<div class="form-group required col-sm-4">
 							<label for="Zip" class="col-sm-5 control-label">
@@ -173,33 +169,38 @@
 							<div class="col-sm-5">
 							<fieldset>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic1">
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Article" type="checkbox" id="rbTopic1">
 									&nbsp;Article
 								</label>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic2">
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Audiovisual Production" type="checkbox" id="rbTopic2">
 									&nbsp;Audiovisual Production
 								</label>
 								<label>
 									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic3">										&nbsp;Book
 								</label>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic4">
-									&nbsp;Dissertation
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Class Assignment" type="checkbox" id="rbTopic4">
+									&nbsp;Class Assignment
 								</label>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic5">
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Dissertation/Thesis" type="checkbox" id="rbTopic5">
+									&nbsp;Dissertation/Thesis
+								</label>
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Genealogy" type="checkbox" id="rbTopic6">
 									&nbsp;Genealogy
-								</label>									<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic6">
+								</label>									
+								<label>
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Online Publication" type="checkbox" id="rbTopic7">
 									&nbsp;Online Publication
 								</label>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic7">
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Personal Interest" type="checkbox" id="rbTopic8">
 									&nbsp;Personal Interest
 								</label>
 								<label>
-									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Book" type="checkbox" id="rbTopic8">
+									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Presentation" type="checkbox" id="rbTopic9">
 									&nbsp;Presentation
 								</label>
 							</fieldset>
