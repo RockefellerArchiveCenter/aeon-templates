@@ -14,7 +14,7 @@
 			<div id="status" class="text-center"><#STATUS></div>
 				<div class="default-table">			
 					<#TABLE name="ViewOutstandingRequests" headerText="Outstanding Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" sortable="true" 
-					 column="TransactionNumber:ID" column="Title" column="ItemAuthor:Author" column="CallNumber:Finding Aid/Call Number" column="ItemVolume:Box/Reel Number" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" orderby="TransactionNumber DESC">
+					 column="TransactionNumber:ID" column="ItemInfo1:Title" column="Title:Collection" column="ItemVolume:Box/Reel Number" column="ItemIssue:Folder/Frame Number" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" orderby="TransactionNumber DESC">
 				</div>
 				<#INCLUDE filename="include_footer.html">
 			</div>    
