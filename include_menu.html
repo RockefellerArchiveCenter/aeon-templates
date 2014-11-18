@@ -2,21 +2,21 @@
 	<ul id="nav">
 		<!-- <li class="active"><a href="<#ACTION action="99">">Logoff <#USER field="FirstName"></a></li> -->
 		<!-- <li class="active"><a href="<#ACTION action="10" form="10">">Main Menu</a></li> -->
-		<li class="active">
-			<h4>New Request</h4>
+		<li class="active"><a href="<#ACTION action="10" form="20" value="NewRequest">">New Requests</a></li>
+			<!-- <h4>New Request</h4>
 			<ul>
-				<li><a href="<#ACTION action="10" form="21">" onclick="ga('send', 'event', 'Navigation', 'New Material Request', 'New Requests');">Material Request</a></li>
-				<li><a href="<#ACTION action="10" form="23">" onclick="ga('send', 'event', 'Navigation', 'New Duplication Order', 'New Requests');">Duplication Order</a></li>
+				<li data-menu="1"><a href="<#ACTION action="10" form="21">" onclick="ga('send', 'event', 'Navigation', 'New Material Request', 'New Requests');">Material Request</a></li>
+				<li data-menu="2"><a href="<#ACTION action="10" form="23">" onclick="ga('send', 'event', 'Navigation', 'New Duplication Order', 'New Requests');">Duplication Order</a></li>
 			</ul>
-		</li>
+		</li> -->
 		<li class="active">
 			<h4>Requests</h4>
 			<ul>
-				<li><a href="<#ACTION action="10" form="76">" onclick="ga('send', 'event', 'Navigation', 'Review Requests', 'Requests');">Review Requests</a></li>
-				<li><a href="<#ACTION action="10" form="62">" onclick="ga('send', 'event', 'Navigation', 'Outstanding Requests', 'Requests');">Outstanding Requests</a></li>
-				<li><a href="<#ACTION action="10" form="70">" onclick="ga('send', 'event', 'Navigation', 'Cancelled Requests', 'Requests');">Cancelled Requests</a></li>
-				<li><a href="<#ACTION action="10" form="68">" onclick="ga('send', 'event', 'Navigation', 'Request History', 'Requests');">Request History</a></li>
-				<li><a href="<#ACTION action="10" form="60">" onclick="ga('send', 'event', 'Navigation', 'All Requests', 'Requests');">All Requests</a></li>		
+				<li data-menu="3"><a href="<#ACTION action="10" form="76">" onclick="ga('send', 'event', 'Navigation', 'Review Requests', 'Requests');">Review Requests</a></li>
+				<li data-menu="4"><a href="<#ACTION action="10" form="62">" onclick="ga('send', 'event', 'Navigation', 'Outstanding Requests', 'Requests');">Outstanding Requests</a></li>
+				<li data-menu="5"><a href="<#ACTION action="10" form="70">" onclick="ga('send', 'event', 'Navigation', 'Cancelled Requests', 'Requests');">Cancelled Requests</a></li>
+				<li data-menu="6"><a href="<#ACTION action="10" form="68">" onclick="ga('send', 'event', 'Navigation', 'Request History', 'Requests');">Request History</a></li>
+				<li data-menu="7"><a href="<#ACTION action="10" form="60">" onclick="ga('send', 'event', 'Navigation', 'All Requests', 'Requests');">All Requests</a></li>		
 						
 			</ul>
 		</li>
@@ -28,12 +28,12 @@
 			<h4>Orders</h4>
 			<ul>
 				<!--<li><a href="<#ACTION action="10" form="77">" onclick="ga('send', 'event', 'Navigation', 'Order Estimates', 'Orders');">Order Estimates</a></li>-->
-				<li><a href="<#ACTION action="10" form="78">" onclick="ga('send', 'event', 'Navigation', 'Invoices', 'Orders');">Invoices</a></li>
-				<li><a href="<#ACTION action="10" form="64">" onclick="ga('send', 'event', 'Navigation', 'Delivered Orders', 'Orders');">Delivered Orders</a></li>				
+				<li data-menu="8"><a href="<#ACTION action="10" form="78">" onclick="ga('send', 'event', 'Navigation', 'Invoices', 'Orders');">Invoices</a></li>
+				<li data-menu="9"><a href="<#ACTION action="10" form="64">" onclick="ga('send', 'event', 'Navigation', 'Delivered Orders', 'Orders');">Delivered Orders</a></li>				
 			</ul>
 		</li>
-		<li class="active"><a href="<#ACTION action="10" form="73">" onclick="ga('send', 'event', 'Navigation', 'Notifications', 'Notifications');">Notifications</a></li>
-		<li class="active"><a href="<#ACTION action="10" form="90">" onclick="ga('send', 'event', 'Navigation', 'Activities', 'Activities');">Activities</a>
+		<li class="active" data-menu="10"><a href="<#ACTION action="10" form="73">" onclick="ga('send', 'event', 'Navigation', 'Notifications', 'Notifications');">Notifications</a></li>
+		<li class="active" data-menu="11"><a href="<#ACTION action="10" form="90">" onclick="ga('send', 'event', 'Navigation', 'Activities', 'Activities');">Activities</a>
 		<!-- <li class="active"><a href="#">Preferences</a>
 			<ul>
 				<li class="first"><a href="<#ACTION action="10" form="81">">Change User Information</a></li>
