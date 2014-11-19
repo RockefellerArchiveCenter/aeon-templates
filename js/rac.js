@@ -1,4 +1,4 @@
-//Add classes and close button to alerts to make them dismissable using Bootstrap's javascript
+//Add classes and close button to alerts to make them dismissable using Bootstrap's alerts javascript component
 $(function () {
 	$('.alertSystem, .alertUser, .alertStatus, .alertDeliveryLocation').addClass('alert alert-dismissable').prepend('<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>');
 });
@@ -14,8 +14,29 @@ $(function (){
 	});
 });
 
-//Tooltip rollovers for action buttons at top of forms
+//Create tooltip rollovers for action buttons at top of forms using Bootstrap's tooltips javascript component
+$(function (){
+	$.each($('#transactionMenu a'), function (){
+		$(this).attr('data-toggle', "tooltip").attr('data-placement', 'top');
+		var text = $(this).html();
+		if(text === "Edit Request") {
+			$(this).attr('title', 'Make changes to this request');
+		} else if(text === "Cancel Request") {
+			$(this).attr('title', 'Cancel this request');
+		} else if(text === "Resubmit Request") {
+			$(this).attr('title', 'Submit this request again');
+		} else if(text === "Request Item Again") {
+			$(this).attr('title', 'Make a copy of this request to submit again');
+		} else if(text === "Order Copy of Item") {
+			$(this).attr('title', 'Request copies of materials in this request');
+		} else if(text === "Edit Request") {
+			$(this).attr('title', 'Make changes to this request');
+		} else if(text === "Export Citation") {
+			$(this).attr('title', 'Export a citation of these materials in RIS format');
+		} 
+	});
+});
 
-
-//Dialog with status definitions - get a list of these from...where?
-//Submitted by User, Awaiting Future Request Processing, Awaiting Request Processing, In Item REtrieval, Item Checked Out, Request Finished
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
