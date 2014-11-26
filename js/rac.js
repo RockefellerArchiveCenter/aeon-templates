@@ -44,12 +44,13 @@ $(function () {
 
 //Confirm request cancellation dialog
 $(function (){
+	var link = $("#transactionMenu a:contains('Cancel Request')").attr('href');
+	console.log(link);
 	$("#transactionMenu:contains('Cancel Request')").on('click', function(){
 		$('#cancelModal').modal('show');
 		return false;
 	});
 	$("#cancelModal button[class='btn btn-primary']").on('click', function(){
-		var link = $("#transactionMenu:contains('Cancel Request')").attr('href');
 		window.location.href = link
 	});
 });
