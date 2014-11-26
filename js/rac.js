@@ -1,12 +1,11 @@
-//Add classes and close button to alerts to make them dismissable using Bootstrap's alerts javascript component
+// Add classes and close button to alerts to make them dismissable using Bootstrap's alerts javascript component
 $(function () {
 	$('.alertSystem, .alertUser, .alertStatus, .alertDeliveryLocation').addClass('alert alert-dismissable').prepend('<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>');
 });
 
-//Adds activeNav class to menu items based on which page is shown
+// Adds activeNav class to menu items based on which page is displayed
 $(function (){
 	var id = $('#content').attr('data-menu');
-	//This isn't quite right
 	$.each($('#nav li'), function(){
 		if(id && $(this).attr('data-menu') === id) {
 			$(this).addClass('activeNav');
@@ -14,7 +13,7 @@ $(function (){
 	});
 });
 
-//Create tooltip rollovers for action buttons at top of forms using Bootstrap's tooltips javascript component
+// Create tooltip rollovers for action buttons at top of forms using Bootstrap's tooltips javascript component
 $(function (){
 	$.each($('#transactionMenu a'), function (){
 		$(this).attr('data-toggle', "tooltip").attr('data-placement', 'top');
@@ -42,11 +41,10 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
 
-//Confirm request cancellation dialog
+// Confirm request cancellation dialog
 $(function (){
 	var link = $("#transactionMenu a:contains('Cancel Request')").attr('href');
-	console.log(link);
-	$("#transactionMenu:contains('Cancel Request')").on('click', function(){
+	$("#transactionMenu a:contains('Cancel Request')").on('click', function(){
 		$('#cancelModal').modal('show');
 		return false;
 	});
