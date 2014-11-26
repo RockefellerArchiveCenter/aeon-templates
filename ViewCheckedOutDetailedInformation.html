@@ -17,10 +17,6 @@
 		
 				<#INCLUDE type="DetailedDocTypeInformation">
 
-<!--				<div class="default-table">
-					<#TABLE name="DetailedInformation" headerText="Transaction Information" hideColumnHeaders="true"><br />					
-				</div>
--->
 				<div class="default-table">
 					<#TABLE name="NotesInformation" headerText="Notes" noDataAction="ShowMessageRow" noDataMessage="No Notes" column="NoteDate:Date/Time" column="AddedBy:Added By" column="Note"><br />
 				</div>
@@ -34,5 +30,6 @@
     		</div>
   		</div>
 	</div>
+	<#INCLUDE filename="include_cancel_modal.html">
 </body>
 </html>

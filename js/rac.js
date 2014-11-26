@@ -37,6 +37,19 @@ $(function (){
 	});
 });
 
+// Initializes Bootstrap tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+});
+
+//Confirm request cancellation dialog
+$(function (){
+	$("#transactionMenu:contains('Cancel Request')").on('click', function(){
+		$('#cancelModal').modal('show');
+		return false;
+	});
+	$("#cancelModal button[class='btn btn-primary']").on('click', function(){
+		var link = $("#transactionMenu:contains('Cancel Request')").attr('href');
+		window.location.href = link
+	});
 });
