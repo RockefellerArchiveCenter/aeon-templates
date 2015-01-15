@@ -435,7 +435,7 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:
 .default-table tfoot td {border-top: 1px solid #C45414; padding: 5px;}
 .default-table tfoot tr td {padding: 5px;}
 .default-table tfoot tr.row-footer {background: #ffffff; color:#000000}
-.default-table a {text-decoration:none;}
+.default-table thead a {text-decoration:none;}
 .default-table caption {font-size: 1.5em; font-weight: bold; padding-bottom: .5em; color: #000;}
 
 /* FAQ */
