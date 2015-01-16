@@ -11,7 +11,7 @@
     	<div id="content-wrap" class="row">
 		<#INCLUDE filename="include_menu.html">
         	<div id="content" class="col-sm-8">
-			<form action="aeon.dll" method="post" class="f-wrap-request form-horizontal" role="form">
+			<form action="aeon.dll" method="post" class="f-wrap-request form-horizontal duplication" role="form">
 			<input type="hidden" name="AeonForm" value="EditPhotoduplicationRequest">
 			<input type="hidden" name="Username" value="<#PARAM name="Username">">
 			<input type="hidden" name="SessionID" value="<#PARAM name="SessionID">">
@@ -148,6 +148,13 @@
                             <div class="col-sm-8">
                                 <textarea id="Notes" name="Notes" rows="2" class="f-name form-control" tabindex="205"><#PARAM name="Notes"></textarea>
                                 <span class="help-block">Enter any notes about this request for your personal reference.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-3">
+                                <input id="costagree" name="costagree" type="checkbox" class="f-checkbox" tabindex="215"/>
+                                <label>I agree to pay the duplication costs for this request. See our <a href="http://dimesdev.rockarch.org/xtf/feeschedule.html" target="_blank">fee schedule</a>.</label>
                             </div>
                         </div>
 						

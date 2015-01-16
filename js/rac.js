@@ -52,3 +52,15 @@ $(function (){
 		window.location.href = link
 	});
 });
+
+// Force users to explicitly accept charges for photoduplication orders
+$(function () {
+	$('.duplication input#buttonSubmitRequest').prop('disabled', true);
+	$('input#costagree').on('click', function (){
+		if($("input#costagree").is(':checked')) {
+            $('.duplication input#buttonSubmitRequest').prop('disabled', false);
+        } else {
+            $('.duplication input#buttonSubmitRequest').prop('disabled', true);
+        }
+	});
+});
