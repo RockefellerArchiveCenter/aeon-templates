@@ -15,7 +15,7 @@
 			<#INCLUDE filename="include_menu.html">
 			<div id="content" class="col-sm-8" data-menu="5">
 			<div id="status" class="text-center"><#STATUS></div>
-				<div class="default-table">			
+				<div class="default-table list">			
 					<#TABLE name="ViewCancelledItems" headerText="Cancelled Requests" noDataAction="ShowMessageRow" noDataMessage="No Cancelled Requests" sortable="true" 
 					 column="TransactionNumber:ID" column="Title:Collection/Book Title" column="ItemInfo1:Folder Title" column="ItemVolume:Box/Reel Number" column="ItemIssue:Folder/Frame Number" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" orderby="TransactionNumber DESC">
 				</div>

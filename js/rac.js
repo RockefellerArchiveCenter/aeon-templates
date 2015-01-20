@@ -67,7 +67,7 @@ $(function () {
 
 // Add icons to titles in request tables
 $(function (){
-	$('.default-table table tr').each(function(){
+	$('.default-table.list table tr').each(function(){
 		var duplication = $(this).find("td").eq(6).text();
 		var title = $(this).find("td").eq(1);
 		if(duplication.match(/[a-z]/i)) {
