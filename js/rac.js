@@ -64,3 +64,16 @@ $(function () {
         }
 	});
 });
+
+// Add icons to titles in request tables
+$(function (){
+	$('.default-table table tr').each(function(){
+		var duplication = $(this).find("td").eq(6).text();
+		var title = $(this).find("td").eq(1);
+		if(duplication.match(/[a-z]/i)) {
+			$(title).prepend('<img src="/css/images/duplication-request.png" alt="Duplication Request" title="Duplication Request"/>');
+		} else {
+			$(title).prepend('<img src="/css/images/reading-room-request.png" alt="Reading Room Request" title="Reading Room Request"/>');
+		}
+	})
+})
