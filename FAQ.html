@@ -1,146 +1,388 @@
 <html>
 <head>
 <meta http-equiv="Pragma" content="no-cache">
-<title>RACcess.rockarch.org FAQ</title>
+<title>RACcess.rockarch.org Logon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <link rel="apple-touch-icon" href="iphone-icon.png" />
+<link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
 <!--[if lte IE 6]>
 <link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
 <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-10013579-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <!-- Logon.html -->
 </head>
 
-<div id="navBar">
-</div>
+<!-- navbar -->
+<div class="navbar navbar-default" role="navigation">
+  <div class="contain		er-fluid">
 
-<div id="racBanner">
-	<div id="racLogo">
-		<a target="_blank" href="klematis_big.htm">
-		<img src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
-		</a>
-	</div>
-	<div id="racTitle">RACcess.rockarch.org</div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="navbar-collapse collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Us
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://rockarch.org/about/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'Overview']);">Overview</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/research/inforesearch.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'General Information']);">General Information</a></li>
+                
+                <li><a tabindex="-1" href="http://rockarch.org/about/board.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'Staff']);">Board of Trustees</a></li>
+                
+                <li><a tabindex="-1" href="http://rockarch.org/about/staff.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'Staff']);">Staff</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/about/careers.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'Employment Opportunities']);">Employment Opportunities</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/about/contact.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'About Us', 'Contact Us']);">Contact Us</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Grants
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://rockarch.org/grants/generalgia.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Grants', 'Grant-in-Aid']);">Grant-in-Aid</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/grants/ehrlichgrant.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Grants', 'Ehrlich Grants']);">Grants to Support Research in the Paul Ehrlich Collection</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/research/inforesearch.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Grants', 'Information for Researchers']);">Information for Researchers</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/grants/currentawards.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Grants', 'Grant Awards']);">Grant Awards</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/publications/resrep/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Grants', 'Research Reports']);">Research Reports</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Collections
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://dimes.rockarch.org/xtf/search" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Search All Collection Guides']);">Search All Collection Guides</a></li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Foundations (A-F)</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdr3orgs.php#acc" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Asian Cultural Council']);">Asian Cultural Council</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/culpeper.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Charles E. Culpeper Foundation']);">Charles E. Culpeper Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/cmbny.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'China Medical Board']);">China Medical Board of New York</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/commonwealth.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Commonwealth Fund']);">Commonwealth Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdrjrorgs.php#davison" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Davison Fund']);">Davison Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/ford/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Ford Foundation']);">Ford Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/fcd.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Foundation for Child Development']);">Foundation for Child Development</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Foundations (G-M)</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/geb.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'General Education Board']);">General Education Board</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/hrf.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Health Research Fund']);">Health Research Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdrjrorgs.php#ieb" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'International Education Board']);">International Education Board</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/markle.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Markle Foundation']);">John and Mary Markle Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdr3orgs.php#jdr3" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'JDR 3rd Fund']);">JDR 3rd Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/lsrm.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Laura Spelman Rockefeller Memorial']);">Laura Spelman Rockefeller Memorial</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/markey.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Lucille P. Markey Charitable Trust']);">Lucille P. Markey Charitable Trust</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#mbr" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Martha Baird Rockefeller Fund for Music']);">Martha Baird Rockefeller Fund for Music</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Foundations (N-Z)</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/neareast.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Near East Foundation']);">Near East Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rbf/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Rockefeller Brothers Fund']);">Rockefeller Brothers Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rf/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Rockefeller Foundation']);">Rockefeller Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/sage.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Russell Sage Foundation']);">Russell Sage Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdrjrorgs.php#sealantic" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Sealantic Fund']);">Sealantic Fund</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#spelman" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Spelman Fund of New York']);">Spelman Fund of New York</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/wtgrant.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'William T. Grant Foundation']);">William T. Grant Foundation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/wwilson.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Woodrow Wilson National Fellowship Foundation']);">Woodrow Wilson National Fellowship Foundation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Other Organizations (A-H)</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdr3orgs.php#adc" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Agricultural Development Council']);">Agricultural Development Council</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/narorgs.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'American International Association for Economic and Social Development']);">American International Association for Economic and Social Development</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#aeap" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Arts, Education and Americans Panel']);">Arts, Education and Americans Panel</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdr3orgs.php#asiasoc" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Asia Society']);">Asia Society</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/bsh.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Bureau of Social Hygeiene']);">Bureau of Social Hygiene</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/counfound.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Council on Foundations']);">Council on Foundations</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#dlma" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Downtown-Lower Manhattan Association']);">Downtown-Lower Manhattan Association, Inc.</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/foundationcenter.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Foundation Center']);">Foundation Center</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#goldhinz" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Goldstone and Hinz']);">Goldstone &amp; Hinz</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdrjrorgs.php#hhv" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Historic Hudson Valley Manuscript Collection']);">Historic Hudson Valley Manuscript Collection</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Other Organizations (I-Z)</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/narorgs.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'International Basic Economy Corporation']);">International Basic Economy Corporation</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#mskcc" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Memorial Sloan-Kettering Cancer Center']);">Memorial Sloan-Kettering Cancer Center</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/popcouncil.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Population Council']);">Population Council</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/jdr3orgs.php#poa" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Products of Asia']);">Products of Asia</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/hookworm.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Rockefeller Sanitary Commission']);">Rockefeller Sanitary Commission</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/nonrockorgs/ssrc.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Social Science Research Council']);">Social Science Research Council</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#trilateral" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Trilateral Commission']);">Trilateral Commission</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#uniontank" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Union Tank Car Company']);">Union Tank Car Company</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/rockorgs/miscorgs.php#wcph" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Women's Club of Pocantico Hills']);">Women's Club of Pocantico Hills</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Rockefeller University</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/ru/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Rockefeller University Collections Overview']);">Collections Overview</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/ru/rgdescriptions.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Rockefeller University Record Group Descriptions']);">Record Group Descriptions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Rockefeller Family</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/jdrsr/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'John D. Rockefeller Papers']);">John D. Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/william.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'William Rockefeller Papers']);">William Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/omr.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Office of the Messrs. Rockefeller']);">Office of the Messrs. Rockefeller</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/jdrjr/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'John D. Rockefeller, Jr. Papers']);">John D. Rockefeller, Jr. Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/abby/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Abby Aldrich Rockefeller Paper']);">Abby Aldrich Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/abbymauze.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Abby R. Mauze Papers']);">Abby R. Mauzé Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/jdr3/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'John D. Rockefeller 3rd Papers']);">John D. Rockefeller 3rd Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/blanchetterockefeller.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Blanchette H. Rockefeller Papers']);">Blanchette H. Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/laurance.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Laurance S. Rockefeller Papers']);">Laurance S. Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/nar/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Nelson A. Rockefeller Papers']);">Nelson A. Rockefeller Papers</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/family/winthrop.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Winthrop Rockefeller Papers']);">Winthrop Rockefeller Papers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Papers of Individuals</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/individuals/rf/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Papers of Individuals - Foundation Related']);">Foundation Related</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/individuals/family/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Papers of Individuals - Rockefeller Family Related']);">Rockefeller Family Related</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/collections/individuals/ru/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Collections', 'Papers of Individuals - Rockefeller University Related']);">Rockefeller University Related</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Programs
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://rockarch.org/programs/digital/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Digital']);">Digital</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/programs/research/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Research and Education']);">Research &amp; Education</a></li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Publications</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://rockarch.org/publications/guides/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Publications - Guides and Subject Surveys']);">Guides and Subject Surveys</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/publications/newsletter/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Publications - Newsletters']);">Newsletters</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/publications/resrep/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Publications - Research Reports']);">Research Reports</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/publications/biblio/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Publications - Bibliographies']);">Bibliographies</a></li>
+                        <li><a tabindex="-1" href="http://rockarch.org/publications/conferences/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Programs', 'Publications - Conference Proceedings']);">Conference Proceedings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                The Rockefellers
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://rockarch.org/bio/famtree.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'The Rockefellers', 'Virtual Family Tree']);">Virtual Family Tree</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/bio/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'The Rockefellers', 'Selected Biographies']);">Selected Biographies</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/inownwords/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'The Rockefellers', 'In Their Own Words']);">In Their Own Words</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/philanthropy/" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'The Rockefellers', 'Rockefeller Philanthropy']);">Rockefeller Philanthropy</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/publications/biblio/bibliofamily.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'The Rockefellers', 'Bibliography on the Rockefeller Family and Philanthropies']);">Bibliography on the Rockefeller Family and Philanthropies</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Information for Researchers
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="http://rockarch.org/research/inforesearch.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Information for Researchers', 'Information for Researchers']);">Information for Researchers</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/about/contact.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Information for Researchers', 'Research Inquiries']);">Research Inquiries</a></li>
+                <li><a tabindex="-1" href="http://rockarch.org/research/citations.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Information for Researchers', 'Sample Citations']);">Sample Citations</a></li>
+            </ul>
+        </li>
+        <li><a tabindex="-1" href="http://rockarch.org/search/searchmain.php" onclick="_gaq.push(['_trackEvent', 'Rockarch Nav', 'Search', 'Navbar']);">Search</a>
+        </li>
+        </ul>
+      </div>
+ 
+  </div>
 </div>
+<!-- end navbar -->
+
+<!-- header -->
+<div id="racBanner" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+        <div id="racLogo" class="col-sm-1">
+            <a href="/aeon.dll">
+                <img class="img-responsive" src="/css/images/RAC-logo.png" alt="RACcess.rockarch.org">
+            </a>
+        </div>
+        <div id="racTitle" class="col-sm-6"><h1><a href="/aeon.dll">RACcess.rockarch.org</a></h1></div>
+    </div>
+</div>
+</div>
+<div class="row">&nbsp;</row>
 <div class="clear2"></div>
+<!-- end header -->
 
 <body id="type-a">
-<div id="wrap">		
-  	<div id="content-wrap">
-    	<div id="content" class="faq">
-			<h2>Answers to Frequently Asked Questions about Aeon</h2>
+<div id="wrap" class="container-fluid">		
+  	<div id="content-wrap" class="row">
+    	<div id="content" class="col-sm-8 col-sm-offset-2">
+			<h2>Answers to Frequently Asked Questions about RACcess</h2>
 			
-<div id="faq-toc">
-	<ul>					
-		<li><a href="#what" target="_self">What is Aeon?</a></li>
-		<li><a href="#userid" target="_self">Why do I need a username and password to use Aeon?</a></li>
-		<li><a href="#password">What if I forget my password?</a></li>
-		<li><a href="#webbrowser" target="_self">What Web browser should I use?</a></li>
-		<li><a href="#security">Is security a problem if I use a public workstation?</a></li>
-		<li><a href="#who" target="_self">Who do I contact if I have problems with or questions about Aeon?</a></li>
-		<li><a href="#cookie">Why does my browser say that you're sending a cookie? What's in it?</a></li>
-	</ul>
+<div class="row">
+	<h4>About RACcess</h4>
+		<ul>
+			<li><a href="#1" target="_self">What is RACcess?</a></li>
+			<li><a href="#2" target="_self">What can I do in RACcess?</a></li>
+		</ul>
+		<h4>Your Account</h4>
+		<ul>
+			<li><a href="#3" target="_self">Why do I need a username and password to use RACcess?</a></li>
+			<li><a href="#4" target="_self">May I create an account in advance?</a></li>
+			<li><a href="#5" target="_self">What if I forget my password?</a></li>
+			<li><a href="#6" target="_self">How long is my request information kept?</a></li>
+			<li><a href="#7" target="_self">How long is my account active?</a></li>
+			<li><a href="#8" target="_self">What does "Subscribe to Alerts Feed" mean?</a></li>
+		</ul>
+	<h4>Requesting Material</h4>
+		<ul>
+			<li><a href="#9" target="_self">May I request material in advance?</a></li>
+			<li><a href="#10" target="_self">How many items may I request?</a></li>
+			<li><a href="#11" target="_self">How can I request material?</a></li>
+			<li><a href="#12" target="_self">Can I see a record of the items I have requested?</a></li>
+			<li><a href="#13" target="_self">Can I request photocopies and digital images through my Research Account?</a></li>
+			<li><a href="#14" target="_self">How can I request copies?</a></li>
+		</ul>
+	<h4>Planning a Research Visit</h4>
+		<ul>
+			<li><a href="#15" target="_self">Where can I find information about planning my research visit?</a></li>
+		</ul>
 </div>
 			
-<div id="faq-contents">
-	<a name="what"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>What is Aeon?</h3>
-
-			<p>Aeon is the electronic system you use to request an item through Special Collections as well as track the history of requests you've received previously. </p>
-		</div>
+<div class="row">
+	<h3 class="text-center">About RACcess</h3>
+	<div class="row">
+		<a name="1"></a>
+		<h4>What is RACcess?</h4>
+		<p>RACcess is the system you use to request materials held at the Rockefeller Archive Center as well as track the history of requests you’ve received previously.</p>
 	</div>
 
-	<a name="userid"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>Why do I need a username and password to use Aeon?</h3>
-
-			<p>Your username and password allows us to give you secure access to information about
-			your requests. We can also enable you to edit your personal information
-			such as your address or phone number. </p>
-
-			<p>Your username can be anything you like, such as your name, abbreviations, or an
-			alphanumeric code. Your password also can be anything you like. We recommend that you
-			follow good security practice and choose a password that is different from those you use
-			to access other systems. However, no one but you will know your password, not even the
-			special collections staff. The password you set is stored encrypted.</p>
-		</div>
-	</div>
-	
-	<a name="password"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>What if I forget my password?</h3>
-
-			<p>In the event that you forget your password, please contact the Sepcial Collections office
-			at (800) 555-1212. We can then reset your password allowing you access to Aeon. Please
-			change your password once you logon to Aeon.</p>
-		</div>
-	</div>
-	
-	<a name="webbrowser"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>What Web browser should I use?</h3>
-
-			<p>You need a Web browser that can handle forms, tables, and preferrably cascading style sheets (CSS). We recommend the current versions of either Microsoft Internet Explorer or Mozilla Firefox.</p>
-		</div>
+	<div class="row">
+		<a name="2"></a>
+		<h4>What can I do in RACcess?</h4>
+		<p>With this system you can submit requests for archival materials or library books at the RAC, either in advance of a visit, or while at the RAC. You can also submit requests for scans or photocopies of archival materials, track the status of requests, and access detailed information about past requests.</p>
 	</div>
 
-	<a name="security"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>Is security a problem if I use a public workstation?</a></h3>
-
-			<p>Yes. Web browsers cache information and create a history file on the local workstation.
-			This allows a subsequent user of the workstation to access the system under your name
-			using the browser's Back button to recall a page from the cache, or by finding a page with
-			your personal information in the browser's history file. If you are concerned about the
-			security of your requests, you can take the following steps:</p>
-
-			<ul>
-				<li>Access Aeon only from your personal computer or an otherwise secure workstation.</li>
-    			<li>Access Aeon from a public workstation in the Special Collections office. These computers are supervised by the staff.</li>
-    			<li>When using a public access workstation:
-					<ol>
-    					<li>Delete from the history file those pages that contain your personal information.</li>
-    					<li>Exit from the Web browser before you leave the workstation. This prevents the Back button from accessing the pages you were using.</li>
-					</ol>
-				</li>
-			</ul>
-		</div>
+	<h3 class="text-center">Your Account</h3>
+	<div class="row">
+		<a name="3"></a>
+		<h4>Why do I need a username and password to use RACcess?</h4>
+		<p>Your username and password allows us to give you secure access to information about your requests. We can also enable you to edit your personal information such as your address or phone number.</p>
+		<p>Your username can be anything you like, such as your name, abbreviations, or an alphanumeric code. Your password also can be anything you like. We recommend that you follow good security practice and choose a password that is different from those you use to access other systems. However, no one but you will know your password, not even RAC staff. The password you set is stored encrypted.</p>
 	</div>
 
-	<a name="who"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>Who do I contact if I have problems with or questions about Aeon?</h3>
-
-			<p>System Problems or Questions: Special Collections office at (800) 555-1212 or e-mail to <a href="mailto:ill@mail.ill.vt.edu">office@your.site.name</a><br />
-			Technical Support Questions: E-mail anytime to <a href="mailto:ill@mail.ill.vt.edu">office@your.site.here</a></p>
-		</div>
+	<div class="row">
+		<a name="4"></a>
+		<h4>May I create an account in advance?</h4>
+		<p>Yes, all researchers are encouraged to create an account online prior to their arrival.</p>
 	</div>
 
-	<a name="cookie"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>Why does my browser say that you're sending a cookie? What's in it?</h3>
-
-			<p>The technology that we use sends a Session ID to be stored on your machine. You can refuse this cookie and still be
-			able to use Aeon without any problems.</p>
-		</div>
+	<div class="row">
+		<a name="5"></a>
+		<h4>What if I forget my password?</h4>
+		<p>In the event that you forget your password, please click on the Forgot Password link on the logon page to reset it. For security reasons, RAC staff do not have access to your password and cannot tell you what it is.</p>
 	</div>
-</div>
+
+	<div class="row">
+		<a name="6"></a>
+		<h4>How long is my request information kept?</h4>
+		<p>We may retain information we collect from you in connection with your use of a RACcess account indefinitely.</p>
+	</div>
+
+	<div class="row">
+		<a name="7"></a>
+		<h4>How long is my account active?</h4>
+		<p>Your account is active indefinitely. However, if it has been more than 365 days since you registered or last updated your account information, you will be asked to update your contact and affiliation information the next time you login.</p>
+	</div>
+
+	<div class="row">
+		<a name="8"></a>
+		<h4>What does "Subscribe to Alerts Feed" mean?</h4>
+		<p>Subscribing to the alerts feeds allows you to get alerts from us sent to your RSS reader.</p>
+	</div>
+
+	<h3 class="text-center">Requesting Material</h3>
+	<div class="row">
+		<a name="9"></a>
+		<h4>May I request material in advance?</h4>
+		<p>Yes, researchers may submit requests at any time after completing the online registration form. </p>
+	</div>
+
+	<div class="row">
+		<a name="10"></a>
+		<h4>How many items may I request?</h4>
+		<p>There are no limits on the number of items you may request in your account. However, depending on the sizes of the boxes requested, we can only bring a maximum of 10 boxes at a time to you in the reading room.</p>
+	</div>
+
+	<div class="row">
+		<a name="11"></a>
+		<h4>How can I request material?</h4>
+		<p>Researchers with a scheduled research appointment can request to view items in the reading room through DIMES. In select cases, materials you wish to see in the reading room may not be represented in DIMES. You will need to submit a manual request for these materials.</p>
+	</div>
+
+	<div class="row">
+		<a name="12"></a>
+		<h4>Can I see a record of the items I have requested?</h4>
+		<p>Yes, researchers can see a record of all requested and viewed items in their research account. </p>
+	</div>
+
+	<div class="row">
+		<a name="13"></a>
+		<h4>Can I request photocopies and digital images through my research account?</h4>
+		<p>Yes, researchers can request photocopies, PDFs or high-resolution scans through their research account.</p>
+	</div>
+
+	<div class="row">
+		<a name="14"></a>
+		<h4>How can I request copies?</h4>
+		<p>Researchers can request copies of archival material through DIMES. In select cases, materials you want to have duplicated may not be represented in DIMES. You will need to submit a manual request for these materials. For more information, see our Duplication Procedures and Fee Schedule.</p>
+	</div>
+
+	<h3 class="text-center">Planning a Visit</h3>
+	<div class="row">
+		<a name="15"></a>
+		<h4>Where can I find information about planning my research visit?</h4>
+		<p>For general information about visiting the Rockefeller Archive Center, see our “Information for Researchers” page.</p>
+	</div>
 
 <div id="footer">
-	&copy; 2011 <a href="http://www.atlas-sys.com">Atlas Systems, Inc.</a> All Rights Reserved.
+	&copy; 2014 <a href="http://www.atlas-sys.com">Atlas Systems, Inc.</a> All Rights Reserved.
 </div>
 </div>    
 </div>
