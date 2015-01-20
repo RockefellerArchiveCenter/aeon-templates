@@ -4,7 +4,7 @@
 <#INCLUDE filename="include_head.html">
 <#INCLUDE filename="include_sortableTables.html">
 
-<link href="<#ACTION action="2" type="40" value="RSSID" valueType="lookup" absolutePath="true" includeSessionID="false">" rel="alternate" type="application/rss+xml" title="Aeon Alerts" />
+<link href="<#ACTION action="2" type="40" value="RSSID" valueType="lookup" absolutePath="true" includeSessionID="false">" rel="alternate" type="application/rss+xml" title="Aeon Alerts" onclick="ga('send', 'event', 'Navigation', 'Subscribe to Alerts Feed', 'Main Menu');"/>
 </head>
 
 <#INCLUDE filename="include_header.html">
@@ -17,7 +17,7 @@
                 <a href="<#ACTION action="2" type="40" value="RSSID" valueType="lookup" absolutePath="true" includeSessionID="false">" onclick="ga('send', 'event', 'Notifications', 'Subscribe', 'Home');">Subscribe to Alerts Feed</a><br />
                 <#ALERTS>
                 <div class="alert alert-success">
-                    <strong>Welcome to RACcess!</strong> You can <a href="https://raccess.rockarch.org/aeon.dll?Action=10&Form=20&Value=NewRequest">make new requests</a>, view <a href="http://rockarch.org/research/inforesearch.php">useful information about research at the Rockefeller Archive Center</a>, or review our <a href="http://rockarch.org/research/inforesearch.php#procedures">policies and procedures</a>. If you want to schedule a research appointment, or have any other questions, email us at <a href="mailto:archive@rockarch.org">archive@rockarch.org</a> and we'll be happy to help!
+                    <strong>Welcome to RACcess!</strong> You can <a href="https://raccess.rockarch.org/aeon.dll?Action=10&Form=20&Value=NewRequest" onclick="ga('send', 'event', 'Navigation', 'New Requests', 'Main Menu Status');">make new requests</a>, view <a href="http://rockarch.org/research/inforesearch.php onclick="ga('send', 'event', 'Navigation', 'Information for Researchers', 'Main Menu Status');"">useful information about research at the Rockefeller Archive Center</a>, or review our <a href="http://rockarch.org/research/inforesearch.php#procedures" onclick="ga('send', 'event', 'Navigation', 'Policies and Procedures', 'Main Menu Status');">policies and procedures</a>. If you want to schedule a research appointment, or have any other questions, email us at <a href="mailto:archive@rockarch.org" onclick="ga('send', 'event', 'Navigation', 'Send Email', 'Main Menu Status');">archive@rockarch.org</a> and we'll be happy to help!
                 </div>
                 <p id="status" class="text-center"><#STATUS></p>
                 <div class="default-table list" id="table-main-outstanding-requests">

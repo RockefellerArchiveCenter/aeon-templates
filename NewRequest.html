@@ -13,16 +13,16 @@
             <#INCLUDE filename="include_menu.html">
             <div id="content" class="col-sm-8" data-menu="2">	
                 <h2>New Request for Archival Collections</h2>
-                <p>Complete via <a href="http://dimesdev.rockarch.org">DIMES</a>.</p>
+                <p>Complete via <a href="http://dimesdev.rockarch.org" onclick="ga('send', 'event', 'Navigation', 'DIMES', 'New Requests - Material Requests');">DIMES</a>.</p>
                 <p>Locate materials and add folders to your list, then use the "Request in Reading Room" option to submit your request.</p>
                 <h2>New Request for Copies</h2>
-                <p>Complete via <a href="http://dimesdev.rockarch.org">DIMES</a>.</p>
+                <p>Complete via <a href="http://dimesdev.rockarch.org" onclick="ga('send', 'event', 'Navigation', 'DIMES', 'New Requests - Duplication Requests');">DIMES</a>.</p>
                 <p>Locate materials and add folders to your list, then use the "Request Copies" option to submit your request.</p>
                 <h2>Unprocessed Materials</h2>
                 <p>In select cases, materials you wish to see in the reading room or request copies of may not be represented in DIMES. You will need to submit a manual request for these materials.</p>
                 <p><a href="<#ACTION action="10" form="21">" onclick="ga('send', 'event', 'Navigation', 'New Material Request', 'New Requests');">Manual Request in Reading Room Form</a></p>
                 <p><a href="<#ACTION action="10" form="23">" onclick="ga('send', 'event', 'Navigation', 'New Duplication Order', 'New Requests');">Manual Request for Copies Form</a></p>
-                <p class="text-info">Unless RAC staff have advised you to create a manual request, submitting requests via <a href="http://dimesdev.rockarch.org">DIMES</a> is strongly preferred</p>
+                <p class="text-info">Unless RAC staff have advised you to create a manual request, submitting requests via <a href="http://dimesdev.rockarch.org" onclick="ga('send', 'event', 'Navigation', 'DIMES', 'New Requests - Manual Requests');">DIMES</a> is strongly preferred</p>
                 <#INCLUDE filename="include_footer.html">
             </div>
         </div>
