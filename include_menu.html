@@ -9,7 +9,7 @@
 			</ul>
 		</li> -->
 		<li class="active">
-			<h4>Requests</h4>
+			<h4>Requests <span class="glyphicon glyphicon-folder-open pull-right"></span></h4>
 			<ul>
 				<li data-menu="7"><a href="<#ACTION action="10" form="60">" onclick="ga('send', 'event', 'Navigation', 'All Requests', 'Requests Menu');">All</a></li>
 				<li data-menu="5"><a href="<#ACTION action="10" form="70">" onclick="ga('send', 'event', 'Navigation', 'Cancelled Requests', 'Requests Menu');">Cancelled</a></li>
@@ -20,22 +20,28 @@
 			</ul>
 		</li>
 		<li class="active">
-			<h4>Search</h4>
+			<h4>Search <span class="glyphicon glyphicon-search pull-right"></span></h4>
 			<#INCLUDE filename="include_search.html">
 		</li>
 		<li class="active">
-			<h4>Orders</h4>
+			<h4>Orders <span class="glyphicon glyphicon-shopping-cart pull-right"></span></h4>
 			<ul>
 				<!--<li><a href="<#ACTION action="10" form="77">" onclick="ga('send', 'event', 'Navigation', 'Order Estimates', 'Orders');">Order Estimates</a></li>-->
 				<li data-menu="8"><a href="<#ACTION action="10" form="78">" onclick="ga('send', 'event', 'Navigation', 'Invoices', 'Orders Menu');">Invoices</a></li>
 				<li data-menu="9"><a href="<#ACTION action="10" form="64">" onclick="ga('send', 'event', 'Navigation', 'Delivered Orders', 'Orders Menu');">Delivered Orders</a></li>				
 			</ul>
 		</li>
-		<li class="active" data-menu="10">
-			<h4><a href="<#ACTION action="10" form="73">" onclick="ga('send', 'event', 'Navigation', 'Notifications', 'Notifications Menu');">Notifications</a></h4>
+		<li class="active">
+			<h4>Notifications <span class="glyphicon glyphicon-exclamation-sign pull-right"></span></h4>
+			<ul>
+				<li data-menu="10"><a href="<#ACTION action="10" form="73">" onclick="ga('send', 'event', 'Navigation', 'Notifications', 'Notifications Menu');">View</a></li>
+			</ul>
 		</li>
-		<li class="active" data-menu="11">
-			<h4><a href="<#ACTION action="10" form="90">" onclick="ga('send', 'event', 'Navigation', 'Activities', 'Activities Menu');">Activities</a></h4>
+		<li class="active">
+			<h4>Activities <span class="glyphicon glyphicon-cog pull-right"></span></h4>
+			<ul>
+				<li data-menu="11"><a href="<#ACTION action="10" form="90">" onclick="ga('send', 'event', 'Navigation', 'Activities', 'Activities Menu');">View</a></li>
+			</ul>
 		</li>
 		<!-- <li class="active"><a href="#">Preferences</a>
 			<ul>
