@@ -55,6 +55,7 @@ $(function (){
 
 // Force users to explicitly accept charges for photoduplication orders
 $(function () {
+	$('input#costagree').prop('checked', false);
 	$('.duplication input#buttonSubmitRequest').prop('disabled', true);
 	$('input#costagree').on('click', function (){
 		if($("input#costagree").is(':checked')) {

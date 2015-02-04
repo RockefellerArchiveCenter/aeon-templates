@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>RACcess - Review Requests</title>
+<title>RACcess - Saved Requests</title>
 <#INCLUDE filename="include_head.html">
 <#INCLUDE filename="include_head_request.html">
 <#INCLUDE filename="include_header.html">
@@ -30,13 +30,13 @@
                     <div class="col-sm-12 voffset1">
                         <fieldset>
                         	<div class="form-group">
-                            	<label for="ScheduledDate" class="col-sm-5 control-label">
+                            	<label for="ScheduledDate" class="col-sm-3 control-label">
                             		<span id="ERRORScheduledDate" class="<#ERROR name="ERRORScheduledDate">">Scheduled Date</span>
                             	</label>
                             	<div class="col-sm-3">
 							        <input id="ScheduledDate" name="ScheduledDate" class="f-name form-control" tabindex="67" type="textbox" value="<#PARAM name="ScheduledDate">">
-							        <span class="help-block">Enter as M/D/YYYY</span>
 							    </div>
+							    <span class="help-block col-sm-12">Click in the field above to bring up a calendar and use it to indicate the date you plan to visit. You may leave this field blank if you are not sure when you'll be coming or you would like the item retrieved as soon as possible.</span>
 							</div>
                         </fieldset>					
                     </div>
