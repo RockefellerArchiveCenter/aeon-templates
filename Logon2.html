@@ -45,7 +45,10 @@
 				</form>
 	
 				<div class="col-sm-4 text-center">
-					<a class="btn btn-lg btn-default" href="aeon.dll?Action=10&Form=79" onclick="ga('send', 'event', 'New Account', 'Create', 'Home');">Create an account</a>
+					<form action="aeon.dll?Action=10&Form=79" method="post" name="RegisterForm" id="RegisterForm">
+						<#FORMSTATE> 
+						<a class="btn btn-lg btn-default" href="#" onclick="ga('send', 'event', 'New Account', 'Create', 'Home'); RegisterForm.submit(); return false;">Create an account</a>
+					</form>
 				</div>
 
 				<div class="col-sm-6 col-sm-offset-3">
