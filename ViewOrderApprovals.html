@@ -18,15 +18,16 @@
 					
 					Select: <a href="#" onclick="ToggleCheckBoxes('ViewOrderApprovals', true);">All<a/>,&nbsp;<a href="#" onclick="ToggleCheckBoxes('ViewOrderApprovals', false);">None<a/>
 					
-					<div class="default-table list">			
+					<div class="default-table list" id="orders-list">			
 						<#TABLE name="ViewOrderBilling" headerText="Orders to Pay" noDataAction="ShowMessageRow" noDataMessage="No Requests awaiting payment" sortable="true" 
 						 column="TransactionNumber:ID&nbsp;&nbsp;&nbsp;&nbsp;" column="Title:Collection/Book Title" column="ItemInfo1:Folder Title" column="ItemVolume:Box/Reel Number" column="ItemIssue:Folder/Frame Number" column="ShippingOption:Shipping" column="TransactionStatus:Status" column="PhotoduplicationStatus:Order Status" column="Subtotal" orderby="t.TransactionNumber DESC">
 					</div>
 					
 					<div class="f-submit-wrap" align="right">
-						<input type="submit" name="SubmitButton" value="Confirm Order" class="f-submit btn btn-primary" tabindex="200" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Approve Billing');"/>                        
-						<input type="submit" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="202" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Pay Now');"/>
+						<input id="confirm-order" type="submit" name="SubmitButton" value="Confirm Order" class="f-submit btn btn-primary" tabindex="200" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Pay Now');"/>                        
+						<input type="submit" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="202" onclick="ga('send', 'event', 'Invoice', 'Approve', 'Cancel');"/>
 					</div>
+					<div id="add-order" class="help-block pull-right">You must select at least one request to pay!</div>
 				</form>
 				<#INCLUDE filename="include_footer.html">
 			</div>    

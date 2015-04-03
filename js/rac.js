@@ -81,3 +81,17 @@ $(function (){
 		}
 	})
 })
+
+// Force users to select at least one order to pay for
+$(function () {
+	$('#confirm-order').prop('disabled', 'disabled');
+	$('#orders-list input[type="checkbox"]').click(function(){
+		if($(this).is(':checked')) {
+			$('#confirm-order').prop('disabled', false);
+			$('#add-order').hide();
+		} else {
+			$('#confirm-order').prop('disabled', 'disabled');
+			$('#add-order').show();
+		}
+	});
+});
