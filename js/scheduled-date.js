@@ -7,7 +7,7 @@
 
     var allowWeekends, minDate, maxDate, yearlyHolidays, floatingHolidays;
 
-    /* 
+    /*
     * Defines whether weekends will be enabled by default
     */
     allowWeekends = true;
@@ -16,7 +16,7 @@
     * Defines the minimum date that will be enabled
     * See http://docs.jquery.com/UI/Datepicker#option-minDate for more information on the available values
     */
-    minDate = null;
+    minDate = 0;
 
     /*
     * Defines the maximum date that will be enabled
@@ -38,7 +38,7 @@
 
     /*
     * Floating holidays or other days that should be disabled
-    * 
+    *
     * An array of 2 elements where the first is the date of the holiday and the second is the name of the
     * holiday which will be displayed in the tooltip for the date
     *
