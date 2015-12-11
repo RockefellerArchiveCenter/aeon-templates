@@ -8,15 +8,15 @@
 		</div>
 	</div>
 
-	<div class="col-sm-6 scheduledDateLabel">
+	<div class="col-sm-6 scheduledDateLabel required">
 		<input id="ScheduledDate" name="ScheduledDate" class="f-name form-control" tabindex="502" type="textbox" value="<#PARAM name="ScheduledDate">">
 	</div>
 
 	<div class="scheduledDateLabel col-sm-12">
 		<span class="help-block <#ERROR name="ERRORScheduledDate">">Click in the field above to bring up a calendar and use it to indicate the date you plan to visit. You may leave this field blank if you are not sure when you'll be coming or you would like the item retrieved as soon as possible.</span>
-	</div>						
-					
-	<div class="userReviewLabel col-sm-12">								
+	</div>
+
+	<div class="userReviewLabel col-sm-12">
         <span class="help-block <#ERROR name="ERRORUserReview">">This request will not be processed until you select and submit it from the "Review Requests" listing under the "Requests" menu in the left-hand navigational bar.</span>
 		<input id="UserReview" name="UserReview" class="f-checkbox" tabindex="503" value="Yes" type="checkbox" <#CHECKED name="UserReview" default="false">>
 	</div>
