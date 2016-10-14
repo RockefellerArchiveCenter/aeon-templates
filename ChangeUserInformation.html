@@ -13,30 +13,31 @@
 				<form action="aeon.dll" method="post" name="ChangeUserInformation" class="f-wrap-request form-horizontal" role="form">
 					<input type="hidden" name="AeonForm" value="ChangeUserInformation">
 					<input type="hidden" name="NotificationMethod" value="E-mail">
+					<#FORMSTATE>
 
 					<!-- <div class="req"><b>*</b> Indicates required field</div> -->
 					<h2 class="text-center">Update Personal Information</h2>
 						<div id="status" class="text-center"><#STATUS></div>
 
-					<fieldset class="col-sm-12">	
-						<div class="form-group required">			
+					<fieldset class="col-sm-12">
+						<div class="form-group required">
 							<label for="FirstName" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORFirstName">">First Name</span>
 							</label>
 							<div class="col-sm-5">
 								<input id="FirstName" name="FirstName" type="text" class="f-name form-control" tabindex="5" value="<#PARAM name="FirstName">">
-							</div>	
-						</div>		
-							
+							</div>
+						</div>
+
 						<div class="form-group required">
 							<label for="LastName" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORLastName">">Family Name</span>
 							</label>
 							<div class="col-sm-5">
 								<input id="LastName" name="LastName" type="text" class="f-name form-control" tabindex="10" value="<#PARAM name="LastName">">
-							</div>				
+							</div>
 						</div>
-						
+
 						<div class="form-group required">
 							<label for="EMailAddress" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERROREMailAddress">">E-mail Address</span>
@@ -45,9 +46,9 @@
 								<input id="EMailAddress" name="EMailAddress" type="text" class="f-name form-control" tabindex="15" value="<#PARAM name="EMailAddress">">
 								<span class="help-block">If you do not have an e-mail address, enter &#34;None&#34;.</span>
 							</div>
-								
+
 						</div>
-						
+
 						<div class="form-group">
 							<label for="Phone" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORPhone">">Contact Phone Number</span>
@@ -56,7 +57,7 @@
 								<input id="Phone" name="Phone" type="text" class="f-name form-control" tabindex="20" value="<#PARAM name="Phone">">
 							</div>
 						</div>
-						
+
 						<div class="form-group required">
 							<label for="Address" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORAddress">">Address Line 1</span>
@@ -74,7 +75,7 @@
 								<input id="Address2" name="Address2" type="text" class="f-name form-control" tabindex="30" value="<#PARAM name="Address2">">
 							</div>
 						</div>
-					
+
 						<div class="form-group required">
 							<label for="City" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORCity">">City</span>
@@ -83,7 +84,7 @@
 								<input id="City" name="City" type="text" class="f-name form-control" tabindex="35" value="<#PARAM name="City">">
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="State" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORState">">State/Province/Region</span>
@@ -92,7 +93,7 @@
 								<input id="State" name="State" type="text" class="f-name form-control" tabindex="40" value="<#PARAM name="State">">
 							</div>
 						</div>
-						
+
 						<div class="form-group required">
 							<label for="Zip" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORZip">">ZIP/Postal Code</span>
@@ -112,7 +113,7 @@
 					    		</select>
 					    	</div>
 						</div>
-						
+
 						<div class="form-group required">
 							<label for="Status" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORStatus">">Researcher Type</span>
@@ -127,7 +128,7 @@
 								<span class="help-block">If "Other" is selected, please describe here.</span>
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="Organization" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERROROrganization">">Institutional Affiliation</span>
@@ -136,16 +137,16 @@
 								<input id="Organization" name="Organization" type="text" class="f-name form-control" tabindex="65" value="<#PARAM name="Organization">">
 							</div>
 						</div>
-					
+
 						<div class="form-group">
 							<label for="Department" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORDepartment">">Department</span>
 							</label>
 							<div class="col-sm-5">
 								<input id="Department" name="Department" type="text" class="f-name form-control" tabindex="70" value="<#PARAM name="Department">">
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="ResearchTopics" class="col-sm-4 control-label">
 								<span class="<#ERROR name="ERRORResearchTopics">">Research Topics</span>
@@ -154,11 +155,11 @@
 								<textarea id="ResearchTopics" name="ResearchTopics" rows="2" class="f-name form-control" tabindex="110"><#PARAM name="ResearchTopics"></textarea>
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="UserInfo1" class="col-sm-4 control-label">
-								<span class="valid">Research Purpose</span>	
-							</label>			
+								<span class="valid">Research Purpose</span>
+							</label>
 							<input type="hidden" id="UserInfo1" name="UserInfo1" value="<#PARAM name="UserInfo1">" />
 							<div class="col-sm-5">
 							<fieldset>
@@ -184,7 +185,7 @@
 								<label>
 									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Genealogy" type="checkbox" id="rbTopic6">
 									&nbsp;Genealogy
-								</label>									
+								</label>
 								<label>
 									<input name="ResearchPurposeCheckBox" class="f-checkbox" value="Online Publication" type="checkbox" id="rbTopic7">
 									&nbsp;Online Publication
@@ -199,16 +200,16 @@
 								</label>
 							</fieldset>
 							</div>
-						</div>	
-																   
+						</div>
+
 						<div class="f-submit-wrap pull-right">
 							<input type="submit" name="SubmitButton" value="Submit" class="f-submit btn btn-primary" tabindex="200" onClick="CombineCheckboxesToHidden('ChangeUserInformation', 'ResearchPurposeCheckBox', 'UserInfo1')"/>
 							<input type="submit" name="SubmitButton" value="Cancel" class="f-submit btn btn-danger" tabindex="201" />
 						</div>
 					</fieldset>
-				</form>		
+				</form>
       			<#INCLUDE filename="include_footer.html">
-    		</div>    
+    		</div>
   		</div>
 	</div>
 </body>
