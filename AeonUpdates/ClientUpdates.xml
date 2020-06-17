@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<Releases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Release>
-    <MajorVersion>3.6</MajorVersion>
-    <LatestVersion>3.6.0.0</LatestVersion>
-    <PathToInstaller>Client/AeonClientSetup.zip</PathToInstaller>
-  </Release>
-</Releases>
